@@ -20,24 +20,28 @@
     <h3>What is an array design?</h3>
 
     <p>For a microarray experiment, an array design is the unique set of probes found on the microarray chip. In ArrayExpress, an ADF (Array Design Format) file captures information about a microarray chip. The ADF is a spreadsheet-like tab-delimited text file with some metadata header rows, followed by a multi-column table of probe information (here is <a href="creating_an_adf.html#WhatIsADF">an example</a>). Data from a microarray experiment cannot be interpreted properly if the array design used is unclear, especially when the microarray is custom-made for a particular research project.</p>
-    <br>
+    <p>&nbsp;</p>
+    <hr />
+
     <h3>Do I need to submit an array design for my experiment?</h3>
     <p>Many of the array designs, especially commercially available ones, are already accessioned in ArrayExpress as ADF files (one ADF for one microarray chip), in which case you do <em>not</em> need to submit any ADF to us. All you need to do is to specify the ADF by accession when asked by Annotare "What array did you use?".</p>
     <p> To find out whether your array design is already in ArrayExpress and get its accession, search by keywords (e.g. manufacturer name, species name) on the <a href="https://www.ebi.ac.uk/arrayexpress/arrays/browse.html?directsub=on">ArrayExpress array design search page</a>. If the search does not return any results, include array designs we imported from NCBI Gene Expression Omnibus (GEO) to <a href="https://www.ebi.ac.uk/arrayexpress/arrays/browse.html">broaden your search</a>.  Or if you know the NCBI GEO platform accession, you can convert it to the ArrayExpress equivalent by replacing "GPL" with "A-GEOD", e.g. "GPL1234" will be "A-GEOD-1234". If you cannot find a GEO platform accession in ArrayExpress, <a href="mailto:annotare@ebi.ac.uk">email us</a>, and we will import the array design.</p>
-    <br>
+    <p>&nbsp;</p>
+    <hr />
+
     <h3>How do I submit an array designs?</h3>
 
     <h4><a id="templates"></a>1. Download an array design file (ADF) template</h4>
 
-    <p>Pick a template that suits your microarray. (Check out this <a href="../assets/images/creating_an_adf.html#Concepts">concepts page</a> if you are unsure whether your microarray contains features, reporters or composite elements.)</p>
+    <p>Pick a template that suits your microarray. (Check out this <a href="../images/creating_an_adf.html#Concepts">concepts page</a> if you are unsure whether your microarray contains features, reporters or composite elements.)</p>
     <ul>
-      <li>Commercially available arrays or custom arrays from commercial manufacturers (e.g. NimbleGen, Agilent, Affymetrix, Illumina), just metadata header to fill in, and send us any supporting files*: <a href="../assets/images/commercial_array_header_template.xls">commercial array design header template</a></li>
+      <li>Commercially available arrays or custom arrays from commercial manufacturers (e.g. NimbleGen, Agilent, Affymetrix, Illumina), just metadata header to fill in, and send us any supporting files*: <a href="../images/commercial_array_header_template.xls">commercial array design header template</a></li>
 
-      <li>Custom spotted arrays with features in block row / block column / row / column grid coordinates: <a href="../assets/images/spotted_array_ADF_template.xls">spotted array template</a></li>
+      <li>Custom spotted arrays with features in block row / block column / row / column grid coordinates: <a href="../images/spotted_array_ADF_template.xls">spotted array template</a></li>
 
-      <li>Custom arrays with only reporters (probes), without grid coordinate information: <a href="../assets/images/reporter_only_array_ADF_template.xls">reporter array template</a></li>
+      <li>Custom arrays with only reporters (probes), without grid coordinate information: <a href="../images/reporter_only_array_ADF_template.xls">reporter array template</a></li>
 
-      <li>Custom arrays with reporters and composite elements: <a href="../assets/images/composite_element_array_ADF_template.xls">composite array template</a></li>
+      <li>Custom arrays with reporters and composite elements: <a href="../images/composite_element_array_ADF_template.xls">composite array template</a></li>
     </ul>
 
     <p><em>*Supporting files are those from the microarray's manufacturer containing information of each probe, e.g. NDF files for NimbleGen arrays, GAL files for spotted arrays.  An ArrayExpress curator will convert your supporting file into the <a href='creating_an_adf.html#WhatIsADF'>ADF table</a>, and append it to the metadata header you fill in to create a complete, valid ADF.</em></p>
@@ -63,6 +67,7 @@
     <p>When the FTP/Aspera transfer is completed, please email us at <a href="mailto:annotare@ebi.ac.uk">annotare@ebi.ac.uk</a> with the name of the transferred file(s).</p>
 
     <p>An ArrayExpress curator will get in touch by email once he/she has looked at your ADF file, including any questions or comments he/she may have. For commercial array designs, the curator will create the full ADF on your behalf by combining the meta-data header and some information converted from the annotation/support files.</p>
+    <br>
   </div>
 
   <!-- side navigation -->

@@ -35,7 +35,8 @@
     <li><a href="#AssignTechReps"><b>Technical Replicates</b></a></li>
   </ul>
 
-  <br>
+  <p>&nbsp;</p>
+  <hr />
 
   <h3 id="AssignRaw">Assign Raw Data Files</h3>
   <br>
@@ -55,31 +56,35 @@
     <li>Press <code>Assign Files...</code> and create a "Raw Data File" column.</li>
     <li>Select the same file name for the two labelled extracts that belong to the same hybridisation. This should always be one Cy3-labelled extract and one Cy5-labelled extract that are connected via the same file name.</li>
   </ol>
-  <p><img src="../images/files_two-colour_simple_design.png" alt="Raw file assigment for simple two-colour microarray experiment" style="border:2px solid #385930; max-width:784.8px" /></p>
+  <p><img src="../images/files_two-colour_simple_design.png" alt="Raw file assigment for simple two-colour microarray experiment" style="max-width:784.8px" /></p>
 
   <p>For two-colour microarray experiments that use a <strong>common reference sample</strong>, the first step is to create a "reference sample" in the sample annotation table. It is not possible to link several files to the same sample. Therefore, even though the same biological material may have been used on each array, the reference sample needs to be duplicated for as many times as it was used on an array. Then the file assignment can be done as explained above, selecting the test sample and one of the reference samples for each file. If the numbering of the reference sample should be removed (because the same reference material was used), leave a comment about this in the feedback dialogue after submission, and a curator will correct this before loading the experiment into ArrayExpress.</p>
-  <p><img src="../images/files_two-colour_reference_design.png" alt="Raw file assigment for reference design two-colour microarray experiment" style="border:2px solid #385930; max-width:784.8px" /></p>
+  <p><img src="../images/files_two-colour_reference_design.png" alt="Raw file assigment for reference design two-colour microarray experiment" style="max-width:784.8px" /></p>
 
   <p>Another example for a <strong>dye-swap design</strong>.
   When you have tested each sample twice (once with each label), you don't need to create a separate row in the sample annotation. Simply, leave both labels selected for each sample in the "Create labeled extracts and assign labels". The list of labelled extracts should now show each sample twice, each time with the respective label. Follow the same instruction as above to link the data files with the labelled extracts.</p>
-  <p><img src="../images/files_two-colour_dye-swap_design.png" alt="Raw file assigment for dye-swap design two-colour microarray experiment" style="border:2px solid #385930; max-width:784.8px" /></p>
+  <p><img src="../images/files_two-colour_dye-swap_design.png" alt="Raw file assigment for dye-swap design two-colour microarray experiment" style="max-width:784.8px" /></p>
   <br>
 
   <h4 id="SeqRaw">Sequencing experiment</h4>
   <p>Sequencing experiments should contain indivdual sequencing raw read files for each sample. To assign raw sequencing files, select the file type "Raw". Then fill the columns with the names of the corresponding file for each sample.</p>
   <p>For experiments using paired-end sequencing, two individual raw read files should be provided. To assign both files to one sample, create two "Raw" data file columns by clicking on <code>Assign Files...</code> twice. Then link the two corresponding sequencing files to each sample.</p>
-  <p><img src="../images/files_seq_raw.png" alt="Raw file assignment for sequencing experiment" style="border:2px solid #385930; max-width:784.8px" /></p>
+  <p><img src="../images/files_seq_raw.png" alt="Raw file assignment for sequencing experiment" style="max-width:784.8px" /></p>
 
-  <br>
+  <p>&nbsp;</p>
+  <hr />
+
   <h3 id="AssignProcessed">Assign Processed Data Files</h3>
   <p>"Processed" data refers to all data files and formats that are derived from the raw files and have been manipulated in any way (e.g. background correction, log2 transformation, normalisation, read trimming). </p>
   <p>To add processed data files, create another column by pressing <code>Assign Files...</code>. Then select "Processed" if you have a separate file for each sample, or "Processed Matrix" if you have a file which contains processed data for more than one sample. Proceed to select the filenames of your uploaded processed data files for the relevant sample(s). If you have more than one processed data type, repeat the process to add more data columns. </p>
   <p>If you would like to include any other additional data types, please upload the files and leave a note in the feedback dialogue after submission, and a curator will add the files as supplement to the submission.</p>
-  <p><img src="../images/files_seq_processed.png" alt="Processed file assignment example" style="border:2px solid #385930; max-width:784.8px" /></p>
+  <p><img src="../images/files_seq_processed.png" alt="Processed file assignment example" style="max-width:784.8px" /></p>
 
-  <br>
+  <p>&nbsp;</p>
+  <hr />
+
   <h3 id="AssignTechReps">Technical Replicates</h3>
-  <p><img src="../images/files_technical_replicates.png" alt="File assignment for technical replicates" style="border:2px solid #385930; max-width:784.8px"></p>
+  <p><img src="../images/files_technical_replicates.png" alt="File assignment for technical replicates" style="max-width:784.8px"></p>
   <h4 id="tech_seq">Sequencing experiment</h4>
   <p>There are two different types of technical replicates:</p>
   <ol>
