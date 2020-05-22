@@ -2,11 +2,11 @@ div.accordion {
     background-color: white;
     color: #4d4d4d;
     cursor: pointer;
-    padding: 18px;
-    width: 900px;
+    padding: 18px 0px 0px 18px;
+    #width: 900px;
     text-align: left;
     border: 1px solid #ddd;
-    margin-top: 9px;
+    #margin-top: 9px;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -18,7 +18,7 @@ div.accordion.active, div.accordion:hover {
 div.panel {
     padding: 0 18px;
     background-color: white;
-    width: 900px;
+    #width: 900px;
     border: 1px solid #ddd;
     display: none;
 }
@@ -28,8 +28,14 @@ div.panel.show {
     display: block;
 }
 
+h1 { color: #1240AB; }
+
+h2 { color: #BF8F30; }
+
+h3 { color: #207A7A; }
+
 img {
     width: 70%;
     height: auto;
-    border: 2px solid #ddd;
+    border: 1px solid #ddd;
 }

@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.3/css/ebi-global.min.css" type="text/css" media="all"/>
   <link rel="stylesheet" href="https://ebi.emblstatic.net/web_guidelines/EBI-Icon-fonts/v1.3/fonts.css" type="text/css" media="all"/>
 
-  <link rel="stylesheet" href="https://www.ebi.ac.uk/fg/annotare/assets/css/annotare-colours.css">
   <link rel="stylesheet" href="../css/annotare_help_style.css ">
 </head>
 
@@ -17,18 +16,18 @@
   <div class="small-12 medium-9 columns">
 
     <h2><a id="ADFSub"></a>Array design submissions</h2>
-
+    <br>
     <h3>What is an array design?</h3>
 
     <p>For a microarray experiment, an array design is the unique set of probes found on the microarray chip. In ArrayExpress, an ADF (Array Design Format) file captures information about a microarray chip. The ADF is a spreadsheet-like tab-delimited text file with some metadata header rows, followed by a multi-column table of probe information (here is <a href="creating_an_adf.html#WhatIsADF">an example</a>). Data from a microarray experiment cannot be interpreted properly if the array design used is unclear, especially when the microarray is custom-made for a particular research project.</p>
-
+    <br>
     <h3>Do I need to submit an array design for my experiment?</h3>
     <p>Many of the array designs, especially commercially available ones, are already accessioned in ArrayExpress as ADF files (one ADF for one microarray chip), in which case you do <em>not</em> need to submit any ADF to us. All you need to do is to specify the ADF by accession when asked by Annotare "What array did you use?".</p>
     <p> To find out whether your array design is already in ArrayExpress and get its accession, search by keywords (e.g. manufacturer name, species name) on the <a href="/arrayexpress/arrays/browse.html?directsub=on">ArrayExpress array design search page</a>. If the search does not return any results, include array designs we imported from NCBI Gene Expression Omnibus (GEO) to <a href="/arrayexpress/arrays/browse.html">broaden your search</a>.  Or if you know the NCBI GEO platform accession, you can convert it to the ArrayExpress equivalent by replacing "GPL" with "A-GEOD", e.g. "GPL1234" will be "A-GEOD-1234". If you cannot find a GEO platform accession in ArrayExpress, <a href="mailto:annotare@ebi.ac.uk">email us</a>, and we will import the array design.</p>
-
+    <br>
     <h3>How do I submit an array designs?</h3>
 
-    h3><a id="templates"></a>1. Download an array design file (ADF) template</h3>
+    <h4><a id="templates"></a>1. Download an array design file (ADF) template</h4>
 
     <p>Pick a template that suits your microarray. (Check out this <a href="../assets/images/creating_an_adf.html#Concepts">concepts page</a> if you are unsure whether your microarray contains features, reporters or composite elements.)</p>
     <ul>
@@ -45,21 +44,19 @@
 
     <p>&nbsp;</p>
 
-    <h3>2. Fill in template with array design information</h3>
+    <h4>2. Fill in template with array design information</h4>
 
     <p>Refer to this <a href="creating_an_adf.html">ADF creation help page</a> for an explanation on how to fill in the template (e.g. what is mandatory, what are accepted values). Please stick to the guidelines so your ADF can be processed promptly. All the ADF header fields and ADF table column headings, highlighted in <strong>bold</strong>, are from a controlled vocabulary, so <em>please do not change them</em>.</p>
 
     <p>When you've finished filling in the template, please save the file in <strong>tab-delimited text (*.txt)</strong> format.  (If you're unsure about this format, this is how you do it with <a href="http://office.microsoft.com/en-gb/excel-help/import-or-export-text-txt-or-csv-files-HP010342598.aspx">Microsoft Excel</a> or <a href="https://wiki.openoffice.org/wiki/Documentation/FAQ/Calc/Files/How_do_I_open_a_tab-delimited_file_in_OpenOffice.org_Spreadsheet%3F_What_if_I_have_a_different_type_of_delimiter%3F">OpenOffice Calc</a>.)</p>
 
     <p>Below is an example snippet of a filled template (text in light blue filled in by the submitter):</p>
-
-    <br>
     <img src="../images/adf_snippet.png" alt="ADF_snippet" style='border:2px solid #385930'/>
     <br>
 
     <p>&nbsp;</p>
 
-    <h3>3. Send the completed ADF file via FTP and then email us</h3>
+    <h4>3. Send the completed ADF file via FTP and then email us</h4>
 
     <p>Please send the ADF file by FTP/Aspera (<a href="ftp_upload.html">instructions here</a>).  If you are submitting a commercially available array design, don't forget to also send us the supporting files (e.g. NDF file for NimbleGen arrays, GAL file for spotted arrays). </p>
 
@@ -102,7 +99,7 @@
           <li><a href="">Technology-specific details</a>
             <ul>
               <li><a href="seq_lib_spec.html">Sequencing library information</a></li>
-              <li><a href="singlecell_submission_guide.html">Single cell information</a></li>
+              <li><a href="single-cell_submission_guide.html">Single cell information</a></li>
               <li><a href="two_color_ma.html">Two-colour experiments</a></li>
             </ul>
           </li>

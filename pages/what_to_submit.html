@@ -7,8 +7,7 @@
   <link rel="stylesheet" href="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.3/css/ebi-global.min.css" type="text/css" media="all"/>
   <link rel="stylesheet" href="https://ebi.emblstatic.net/web_guidelines/EBI-Icon-fonts/v1.3/fonts.css" type="text/css" media="all"/>
 
-  <link rel="stylesheet" href="https://www.ebi.ac.uk/fg/annotare/assets/css/annotare-colours.css">
-  <link rel="stylesheet" href="../css/annotare_help_style.css ">
+  <link rel="stylesheet" href="../css/annotare_help_style.css">
 </head>
 
 <body>
@@ -17,11 +16,13 @@
   <div class="small-12 medium-9 columns">
 
     <h2>Submission overview</<h2>
+
     <h3>What data can be submitted?</h3>
     <div>
       <p>ArrayExpress accepts all <strong>functional genomics data</strong> generated from <strong>microarray</strong> or <strong>next-generation sequencing (NGS)</strong> platforms. Popular experiment types are transcription profiling (mRNA and miRNA), SNP genotyping, chromatin immunoprecipitation (ChIP) and comparative genomic hybridisation. Here is the <a href="#experiment_types">full list of experiment types in ArrayExpress</a>.</p>
       <p class="ngs">We currently <strong>don't accept</strong> metagenomics/metatranscriptomics data (please submit to the <a href="/metagenomics/submission">EBI Metagenomics service</a>) or de novo transcriptome assembly data (the raw RNA-seq reads should be submitted to ArrayExpress, but the assembled transcriptome file directly to the <a href="/ena/submit">European Nucleotide Archive</a>).</p>
     </div>
+    <p>&nbsp;</p>
 
     <h3 id="experiment_types">Experiment types in ArrayExpress</h3>
 
@@ -158,11 +159,6 @@
               <td><a href="/arrayexpress/experiments/E-MTAB-1245/">E-MTAB-1245</a></td>
           </tr>
           <tr>
-              <td>proteomic profiling by mass spectrometer</td>
-              <td><a href="/efo/EFO_0002766">EFO_0002766</a></td>
-              <td><a href="/arrayexpress/experiments/E-MTAB-869">E-MTAB-869</a></td>
-          </tr>
-          <tr>
               <td>RIP-chip by array</td>
               <td><a href="/efo/EFO_0005517">EFO_0005517</a></td>
               <td><a href="/arrayexpress/experiments/E-MTAB-3881/">E-MTAB-3881</a></td>
@@ -245,6 +241,7 @@
         </tbody>
       </table>
     </div>
+    <p>&nbsp;</p>
 
     <h3 id="what_to_prepare">What do I need to prepare?</h3>
 
@@ -259,15 +256,15 @@
     <p><strong>As a submitter, you may need to consult with your colleagues, e.g. collaborators or the core facility personnel performing microarray hybridisation or sequencing for you, to gather all detailed information for a successful submission.</strong></p>
     <h4>Metadata</h4>
     <ul class="ae-help_checklist">
-      <li class="icon-bullet"><span class="icon icon-common icon-check"></span> Experiment description to give context to the data set (not pasting publication abstract please)</li>
-      <li class="icon-bullet"><span class="icon icon-common icon-check"></span> Protocols of all experimental (e.g. sample sourcing, sequencing library preparation) and data analysis  procedures</li>
-      <li class="icon-bullet"><span class="icon icon-common icon-check"></span> Sample annotation (as much details as possible, e.g. age of the plant, mouse strain, cell type)</li>
-      <li class="icon-bullet"><span class="icon icon-common icon-check"></span> Author information (please include the principal investigator of the project)</li>
-      <li class="icon-bullet"><span class="icon icon-common icon-check"></span> <a href="seq_lib_spec.html">Sequencing library specification</a> (NGS experiments only)</li>
+      <li class="icon-bullet"><span class="icon icon-common icon-check" style="color: green"></span> Experiment description to give context to the data set (not pasting publication abstract please)</li>
+      <li class="icon-bullet"><span class="icon icon-common icon-check" style="color: green"></span> Protocols of all experimental (e.g. sample sourcing, sequencing library preparation) and data analysis  procedures</li>
+      <li class="icon-bullet"><span class="icon icon-common icon-check" style="color: green"></span> Sample annotation (as much details as possible, e.g. age of the plant, mouse strain, cell type)</li>
+      <li class="icon-bullet"><span class="icon icon-common icon-check" style="color: green"></span> Author information (please include the principal investigator of the project)</li>
+      <li class="icon-bullet"><span class="icon icon-common icon-check" style="color: green"></span> <a href="seq_lib_spec.html">Sequencing library specification</a> (NGS experiments only)</li>
     </ul>
     <h4>Raw data</h4>
-      <ul class="ae-help_checklist">
-        <li class="icon-bullet"><span class="icon icon-common icon-check"></span> Unprocessed data files
+      <ul>
+        <li class="icon-bullet"><span class="icon icon-common icon-check" style="color: green"></span> Unprocessed data files
         <p class="array"><strong>Microarray</strong>: files obtained from the microarray scanner (e.g. Affymetrix <em>CEL</em> files, Agilent feature extraction <em>txt</em> files, Illumina <em>idat</em> files)<br>
            See the <a href="accepted_raw_ma_file_formats.html">full list of accepted microarray raw data files</a>.</p>
         <p class="ngs"><strong>Sequencing</strong>: compressed raw sequence read files (e.g. <em>fastq.gz</em> files)<br>
@@ -275,11 +272,11 @@
         </li>
       </ul>
     <h4>Processed data</h4>
-      <ul class="ae-help_checklist">
-        <li class="icon-bullet"><span class="icon icon-common icon-check"></span> Processed data matrix in tab-delimited <em>txt</em> format</li>
-        <li class="icon-bullet"><span class="icon icon-common icon-check"></span> Other processed data formats, e.g. <em>bam</em> alignment files (optional)</li>
+      <ul>
+        <li class="icon-bullet"><span class="icon icon-common icon-check" style="color: green"></span> Processed data matrix in tab-delimited <em>txt</em> format</li>
+        <li class="icon-bullet"><span class="icon icon-common icon-check" style="color: green"></span> Other processed data formats, e.g. <em>bam</em> alignment files (optional)</li>
       </ul>
-
+      <br>
   </div>
 
   <!-- side navigation -->
@@ -316,7 +313,7 @@
           <li><a href="">Technology-specific details</a>
             <ul>
               <li><a href="seq_lib_spec.html">Sequencing library information</a></li>
-              <li><a href="singlecell_submission_guide.html">Single cell information</a></li>
+              <li><a href="single-cell_submission_guide.html">Single cell information</a></li>
               <li><a href="two_color_ma.html">Two-colour experiments</a></li>
             </ul>
           </li>
@@ -359,6 +356,18 @@
 <script src="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.3/js/foundationExtendEBI.js"></script>
 <script type="text/JavaScript">$(document).foundation();</script>
 <script type="text/JavaScript">$(document).foundationExtendEBI();</script>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function(){
+            this.classList.toggle("active");
+            this.nextElementSibling.classList.toggle("show");
+        }
+    }
+  </script>
 
 </body>
 </html>
