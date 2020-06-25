@@ -39,3 +39,13 @@ img {
     height: auto;
     border: 1px solid #ddd;
 }
+
+ul.vertical li a {
+  color: rgb(56, 145, 152);
+  font-weight:bold;
+}
+
+ul.vertical li li a {
+  font-weight: normal;
+  color: black
+}
