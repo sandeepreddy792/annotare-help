@@ -9,9 +9,23 @@
 
   <link rel="stylesheet" href="../css/annotare_help_style.css ">
 <style>
-  h5 {
-    color: rgb(56, 145, 152);
-  }
+.top-panel {
+  padding: 10px 20px;
+  position: relative;
+  max-height: 200px;
+  border: 1px solid #f1f1f1;
+margin-bottom: 10px
+
+}
+.bottom-panel {
+  padding: 20px 0px 20px 20px;
+  min-height: 600px;
+  background-color: #fafafa;
+  #background-color: rgb(242, 247, 255);
+
+}
+
+
 </style>
 </head>
 
@@ -26,15 +40,15 @@
     <div class="row">
         <!-- Row of three columns for the three boxes-->
       <div class="medium-4 small-12 columns">
-        <div class="row">
+        <div class="">
             <!-- Header box 1-->
-          <div class="bloc services-background white-color" style="padding: 10px 20px; position: relative; background-color:rgb(48, 125, 130); max-height: 200px">
+          <div class="top-panel">
             <h3><i class="icon icon-common icon-map-signs"></i> Before you start</h3>
             <p>All you need to know in advance</p>
           </div>
         </div>
 
-        <div class="row" style="padding: 20px;">
+        <div class="bottom-panel" >
         <!-- Link body 1-->
           <a href="what_to_submit.html"><h5>What data can be submitted? <i class="icon icon-common icon-angle-right"></i></h5></a>
           <ul class="no-bullet">
@@ -64,9 +78,9 @@
       </div> <!-- end column 1 -->
 
       <div class="medium-4 small-12 columns">
-        <div class="row">
+        <div class="">
 
-          <div class="bloc services-background white-color" style="padding: 10px 20px; position: relative;">
+          <div class="top-panel">
             <h3><i class="icon icon-common icon-edit"></i> Annotare step-by-step</h3>
             <p>Tips and tricks to help during submission</p>
 
@@ -75,7 +89,7 @@
         </div>
 
 
-        <div class="row" style="padding: 20px;">
+        <div class="bottom-panel">
           <a href="getting_started.html"><h5>Getting started <i class="icon icon-common icon-angle-right"></i></h5></a>
           <ul class="no-bullet">
           </ul>
@@ -114,15 +128,15 @@
 
       </div> <!-- end column 2 -->
 
-      <div class="medium-4 small-12 columns">
-        <div class="row">
-          <div class="bloc services-background white-color" style="padding: 10px 20px; position: relative; background-color:rgb(62, 160, 168); max-height: 200px">
+      <div class="medium-4 small-12 columns" >
+        <div class="">
+          <div class="top-panel" style="">
             <h3><i class="icon icon-common icon-calendar-check"></i> After the submission</h3>
             <p>Manage your data in ArrayExpress</p>
           </div>
         </div>
 
-        <div class="row" style="padding: 20px;">
+        <div class="bottom-panel">
           <h5>Access private experiments</h5>
           <ul class="no-bullet">
             <li><a href="after_sub_private_access.html#private_access">View a private experiment in ArrayExpress</a></li>
