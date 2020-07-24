@@ -34,6 +34,7 @@ h2 { color: #BF8F30; }
 
 h3 { color: #207A7A; }
 
+
 img {
     width: 70%;
     height: auto;
@@ -41,7 +42,7 @@ img {
 }
 
 ul.vertical li a {
-  color: rgb(56, 145, 152);
+  color: rgb(32, 122, 122);
   font-weight:bold;
 }
 
