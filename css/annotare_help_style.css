@@ -32,7 +32,10 @@ h1 { color: #1240AB; }
 
 h2 { color: #BF8F30; }
 
-h3 { color: #207A7A; }
+h3 {
+  font-size: 26px;
+  color: #207A7A;
+  }
 
 
 img {
