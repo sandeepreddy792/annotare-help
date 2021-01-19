@@ -18,136 +18,35 @@
   <h2>Single-cell submission guide</h2>
   <br>
   <ol>
-    <li><a href="#SampleInfo">Sample information</a>
-
-    </li>
-    <li><a href="#LibraryInfo">Library and sequencing information</a></li>
-    <li><a href="#FileFormats">File formats</a></li>
+    <li><a href="#SampleInfo">Sample information</a></li>
+    <li><a href="#LibraryInfo">Single cell library information</a></li>
+    <li><a href="#FileFormats">File types and formats</a></li>
     <li><a href="#Droplet">Droplet-based technologies</a></li>
     <li><a href="#Tips">A few more tips</a></li>
   </ol>
   <br>
 
-  <p>Start your single-cell submission using the sequencing template in <a href="https://www.ebi.ac.uk/fg/annotare/">Annotare</a>. Follow the guides below for information about data formats and what metadata to include. Note that larger experiments with more than 1000 raw data files in one experiment are started in Annotare but will be completed manually with the help of a curator.</p>
+  <p>Start your single-cell submission using the single cell sequencing template in <a href="https://www.ebi.ac.uk/fg/annotare/">Annotare</a>. Follow the guides below for information about data formats and what metadata to include. Note that larger experiments with more than 1000 raw data files in one experiment are started in Annotare but will be completed manually with the help of a curator.</p>
   <br>
   <h3 id="SampleInfo">Sample information</h3>
-  <h4>Required sample attributes</h4>
-  <div class="row">
-    <div class="columns medium-11 medium-push-1">
-    <p>Minimum sample attributes for primary cells from different species and cell lines</p>
-    <table>
-      <thead>
-        <tr>
-          <th>Human <i class="icon icon-species" data-icon="H"></i></th>
-          <th>Vertebrates <i class="icon icon-species" data-icon="M"></i></th>
-          <th>Plants <i class="icon icon-species" data-icon="P"></i></th>
-          <th>Cell lines <i class="icon icon-species" data-icon="Y"></i></th>
-          <th>Comment</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>organism</td>
-          <td>organism</td>
-          <td>organism</td>
-          <td>organism</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>strain or breed</td>
-          <td>cultivar or ecotype</td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>age</td>
-          <td>age</td>
-          <td>age</td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>developmental stage</td>
-          <td>developmental stage</td>
-          <td>developmental stage</td>
-          <td>developmental stage</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>sex</td>
-          <td>sex</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>disease</td>
-          <td></td>
-          <td></td>
-          <td>disease</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>genotype</td>
-          <td>genotype</td>
-          <td>genotype</td>
-          <td><em>genetic modification</em></td>
-        </tr>
-        <tr>
-          <td>organism part</td>
-          <td>organism part</td>
-          <td></td>
-          <td>organism part</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>cell type*</td>
-          <td>cell type*</td>
-          <td></td>
-          <td>cell type</td>
-          <td><em>* if known, see comment below</em></td>
-        </tr>
-        <tr>
-          <td>individual</td>
-          <td>individual</td>
-          <td></td>
-          <td></td>
-          <td><em>donor or animal ID</em></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>cell line</td>
-          <td><em>name of commercial cell line</em></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  </div>
-  <br>
-  <h4>Mandatory information that may be applicable</h4>
-  <div class="row">
-  <div class="columns medium-11 medium-push-1">
+
+  <h4>Single-cell specific attributes</h4>
+
     <ul class="no-bullet">
       <li>
-        <h5>Unknown cell type</h5>
+        <h5>Inferred cell type</h5>
         <p> If your experiment involves discovering new cell types or you work with pooled cells from a whole organ or organism, the precise cell type might be undefined at the start of the experiment but inferred later during the analysis. In that case, annotate the samples with the inferred cells type using the attribute <strong>"inferred cell type"</strong>. The attribute "cell type" should refer to the input cell type that is known at the start of the experiment. <a href="https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-5953/samples/" class="readmore" target="_blank">Example: E-MTAB-5953</a>
         </p>
-        <hr />
       </li>
 
       <li>
-        <h5>Experimental variable</h5>
+        <h5>Single cell identifier (experimental variable)</h5>
         <p> If the purpose of your experiment is comparing the heterogeneity within one cell population, you might not have any other experimental variables. In this case, you can use the term <strong>"single cell identifier"</strong> as experimental variable and enter the cell IDs as values. <a href="https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-6142/samples/" class="readmore" target="_blank">Example: E-MTAB-6142</a>
         </p>
-        <hr />
       </li>
 
       <li>
-        <h5>Quality control pre-analysis</h5>
+        <h5>Single cell well quality (pre-analysis)</h5>
         <p> If your single-cell experiment included visual inspection of the cells before lysis, you can include this information in the sample attributes as <strong>"single cell well quality"</strong>. The values for this attribute should be "OK" or "not OK" (i.e. the well should be discarded from data analysis). If you have more detailed information about the "bad" wells, the following terms should be used:</p>
           <ul>
             <li>"debris"</li>
@@ -156,94 +55,88 @@
             <li>"no cell"</li>
           </ul>
         <a href="https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-5522/samples/" class="readmore" target="_blank">Example: E-MTAB-5522</a>
-
-        <hr />
       </li>
 
       <li>
-        <h5>Quality control post-analysis</h5>
+        <h5>Post-analysis well quality</h5>
         <p> You might have quality information about the dataset, e.g. which cells were excluded from your analysis due to insufficient sequencing quality. You can use the attribute <strong>"post analysis single cell quality"</strong> and annotate each cell with "pass" or "fail".
         <a href="https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-5522/samples/" class="readmore" target="_blank">Example: E-MTAB-5522</a>
-        </p><hr />
+        </p>
       </li>
     </ul>
-  </div>
-  </div>
 
-  <div class="row">
-    <div class="columns medium-11 medium-push-1">
-      <p>Examples of additional single-cell sample attributes</p>
-      <table>
-        <thead>
-          <tr>
-            <th width="100">Example</th>
-            <th width="200">single cell identifier (experimental variable)</th>
-            <th width="150">inferred cell type</th>
-            <th>single cell well quality</th>
-            <th>post-analysis single cell quality</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Sample 1</td>
-            <td>cell 1</td>
-            <td>cell type A</td>
-            <td>OK</td>
-            <td>pass</td>
-          </tr>
-          <tr>
-            <td>Sample 2</td>
-            <td>cell 2</td>
-            <td>cell type B</td>
-            <td>OK</td>
-            <td>pass</td>
-          </tr>
-          <tr>
-            <td>Sample 3</td>
-            <td>cell 3</td>
-            <td>not applicable</td>
-            <td>OK</td>
-            <td>fail</td>
-          </tr>
-          <tr>
-            <td>Sample 4</td>
-            <td>cell 4</td>
-            <td>cell type C</td>
-            <td>OK</td>
-            <td>pass</td>
-          </tr>
-          <tr>
-            <td>Sample 5</td>
-            <td>cell 5</td>
-            <td>not applicable</td>
-            <td>2 cells</td>
-            <td>fail</td>
-          </tr>
-          <tr>
-            <td>Sample 6</td>
-            <td>cell 6</td>
-            <td>not applicable</td>
-            <td>debris</td>
-            <td>fail</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
+    <h4>Examples of single-cell sample attributes</h4>
+    <table>
+      <thead>
+        <tr>
+          <th width="100">Example</th>
+          <th width="200">single cell identifier (experimental variable)</th>
+          <th width="150">inferred cell type</th>
+          <th>single cell well quality</th>
+          <th>post-analysis single cell quality</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sample 1</td>
+          <td>cell 1</td>
+          <td>cell type A</td>
+          <td>OK</td>
+          <td>pass</td>
+        </tr>
+        <tr>
+          <td>Sample 2</td>
+          <td>cell 2</td>
+          <td>cell type B</td>
+          <td>OK</td>
+          <td>pass</td>
+        </tr>
+        <tr>
+          <td>Sample 3</td>
+          <td>cell 3</td>
+          <td>not applicable</td>
+          <td>OK</td>
+          <td>fail</td>
+        </tr>
+        <tr>
+          <td>Sample 4</td>
+          <td>cell 4</td>
+          <td>cell type C</td>
+          <td>OK</td>
+          <td>pass</td>
+        </tr>
+        <tr>
+          <td>Sample 5</td>
+          <td>cell 5</td>
+          <td>not applicable</td>
+          <td>2 cells</td>
+          <td>fail</td>
+        </tr>
+        <tr>
+          <td>Sample 6</td>
+          <td>cell 6</td>
+          <td>not applicable</td>
+          <td>debris</td>
+          <td>fail</td>
+        </tr>
+      </tbody>
+    </table>
+
   <br>
+  <h3 id="LibraryInfo">Single cell library information</h3>
+
+
+  <br>
+  <h3>Protocols</h3>
   <h4>Sample collection protocol</h4>
-  <div class="row">
-  <div class="columns medium-11 medium-push-1">
-    <ul class="no-bullet">
-      <li>
-        <h5>Method of cell singularisation</h5>
-        <p> Please include a description of how the cells were treated and separated into single-cells, e.g. FACS or microfluidics (Fluidigm).</p><hr />
-      </li>
-    </ul>
-  </div>
-  </div>
-  <br>
-  <h3 id="LibraryInfo">Library and sequencing information</h3>
+
+  <ul class="no-bullet">
+    <li>
+      <h5>Method of cell singularisation</h5>
+      <p> Please include a description of how the cells were treated and separated into single-cells, e.g. FACS or microfluidics (Fluidigm).</p><hr />
+    </li>
+  </ul>
+
   <h4>Library construction protocol</h4>
   <div class="row">
   <div class="columns medium-11 medium-push-1">
@@ -261,7 +154,6 @@
   </div>
   </div>
 
-  <br>
   <h4>Sequencing protocol</h4>
   <div class="row">
   <div class="columns medium-11 medium-push-1">
@@ -275,8 +167,7 @@
   </div>
   <br>
   <h4>Spike-in RNAs</h4>
-  <div class="row">
-  <div class="columns medium-11 medium-push-1">
+
     <ul class="no-bullet">
       <li>
         <h5>Commercial spike-ins</h5>
@@ -322,8 +213,7 @@
         <hr />
       </li>
     </ul>
-  </div>
-  </div>
+
   <br>
   <h4>Unique molecular identifiers</h4>
   <div class="row">
