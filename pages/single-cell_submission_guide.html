@@ -21,7 +21,7 @@
     <li><a href="#SampleInfo">Sample information</a></li>
     <li><a href="#LibraryInfo">Single cell library information</a></li>
     <li><a href="#FileFormats">File types and formats</a></li>
-    <li><a href="Protocols">Protocols</a><li>
+    <li><a href="Protocols">Protocols</a></li>
   </ol>
   <br>
 
@@ -38,31 +38,36 @@
   <div class="columns medium-11 medium-push-1">
     <ul class="no-bullet">
       <li>
-        <p><strong>Inferred cell type</strong>: If your experiment involves discovering new cell types or you work with pooled cells from a whole organ or organism, the precise cell type might be undefined at the start of the experiment but inferred later during the analysis. In that case, annotate the samples with the inferred cells type using the attribute <strong>"inferred cell type"</strong>. The attribute "cell type" should refer to the input cell type that is known at the start of the experiment. <a href="https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-5953/samples/" class="readmore" target="_blank">Example: E-MTAB-5953</a>
+        <p><strong>Inferred cell type</strong></p>
+        <p>If your experiment involves discovering new cell types or you work with pooled cells from a whole organ or organism, the precise cell type might be undefined at the start of the experiment but inferred later during the analysis. In that case, annotate the samples with the inferred cells type using the attribute <strong>"inferred cell type"</strong>. The attribute "cell type" should refer to the input cell type that is known at the start of the experiment. <a href="https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-5953/samples/" class="readmore" target="_blank">Example: E-MTAB-5953</a>
         </p>
       </li>
-
+      <hr />
       <li>
-        <p><strong>Single cell identifier (experimental variable)</strong>: If the purpose of your experiment is comparing the heterogeneity within one cell population, you might not have any other experimental variables. In this case, you can use the term <strong>"single cell identifier"</strong> as experimental variable and enter the cell IDs as values. <a href="https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-6142/samples/" class="readmore" target="_blank">Example: E-MTAB-6142</a>
+        <p><strong>Single cell identifier (experimental variable)</strong></p>
+        <p>If the purpose of your experiment is comparing the heterogeneity within one cell population, you might not have any other experimental variables. In this case, you can use the term <strong>"single cell identifier"</strong> as experimental variable and enter the cell IDs as values. <a href="https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-6142/samples/" class="readmore" target="_blank">Example: E-MTAB-6142</a>
         </p>
       </li>
-
+      <hr />
       <li>
-        <p><strong>Single cell well quality (pre-analysis)</strong>: If your single-cell experiment included visual inspection of the cells before lysis, you can include this information in the sample attributes as <strong>"single cell well quality"</strong>. The values for this attribute should be "OK" or "not OK" (i.e. the well should be discarded from data analysis). If you have more detailed information about the "bad" wells, the following terms should be used:</p>
+        <p><strong>Single cell well quality (pre-analysis)</strong></p>
+        <p>If your single-cell experiment included visual inspection of the cells before lysis, you can include this information in the sample attributes as <strong>"single cell well quality"</strong>. The values for this attribute should be "OK" or "not OK" (i.e. the well should be discarded from data analysis). If you have more detailed information about the "bad" wells, the following terms should be used:
           <ul>
             <li>"debris"</li>
             <li>"multiple cells" or number of cells if known</li>
             <li>"dead cell"</li>
             <li>"no cell"</li>
           </ul>
-        <a href="https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-5522/samples/" class="readmore" target="_blank">Example: E-MTAB-5522</a>
+        <a href="https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-5522/samples/" class="readmore" target="_blank">Example: E-MTAB-5522</a></p>
       </li>
-
+      <hr />
       <li>
-        <p><strong>Post-analysis well quality</strong>: You might have quality information about the dataset, e.g. which cells were excluded from your analysis due to insufficient sequencing quality. You can use the attribute <strong>"post analysis single cell quality"</strong> and annotate each cell with "pass" or "fail".
+        <p><strong>Post-analysis well quality</strong></p>
+        <p>You might have quality information about the dataset, e.g. which cells were excluded from your analysis due to insufficient sequencing quality. You can use the attribute <strong>"post analysis single cell quality"</strong> and annotate each cell with "pass" or "fail".
         <a href="https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-5522/samples/" class="readmore" target="_blank">Example: E-MTAB-5522</a>
         </p>
       </li>
+      <hr />
     </ul>
   </div>
   </div>
@@ -129,7 +134,7 @@
   <h3 id="LibraryInfo">Single cell library information</h3>
 
   <h4>1. Pick library construction method </h4>
-  <p>Select the type of single cell library construction that you followed from <a href="https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0010183&viewMode=All&siblings=false">controlled vocabulary</a> drop-down menu. For some of the most commonly used methods, this will pre-fill the other fields with the default values. These can still be adjusted afterwards. </p>
+  <p>Select the type of single cell <strong>library construction</strong> that you followed from <a href="https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0010183&viewMode=All&siblings=false">controlled vocabulary</a> drop-down menu. For some of the most commonly used methods, this will pre-fill the other fields with the default values. These can still be adjusted afterwards. </p>
 
   <h4>2. Refine parameters</h4>
   <p>Check each parameter carefully, selecting the suitable option from the drop-down menu. For some commonly used library constructions methods Annotare will show the default parameters of the protocol, you may still need to adjust those.</p>
@@ -140,30 +145,37 @@
     <h5>General description</h5>
     <ul class="no-bullet">
       <li>
-        <p><strong>Single Cell Isolation</strong>: The method used for selection of single cells, to allow individual cell barcoding</p>
+        <p><strong>Single Cell Isolation</strong></p>
+        <p>The method used for selection of single cells, to allow individual cell barcoding</p>
       </li>
       <li>
-        <p><strong>End Bias</strong>: The end of the nucleic acid molecule that is preferentially sequenced (bias in read distribution)</p>
+        <p><strong>End Bias</strong></p>
+        <p>The end of the nucleic acid molecule that is preferentially sequenced (bias in read distribution)</p>
       </li>
       <li>
-        <p><strong>Input molecule</strong>: The type or fraction of nucleic acid that was captured in the library</p>
+        <p><strong>Input molecule</strong></p>
+        <p>The type or fraction of nucleic acid that was captured in the library</p>
       </li>
       <li>
-        <p><strong>Primer</strong>: The type of primer used for reverse-transcription</p>
+        <p><strong>Primer</strong></p>
+        <p>The type of primer used for reverse-transcription</p>
       </li>
     </ul>
-
+    <hr />
     <h5>Spike-in RNAs</h5>
     <ul class="no-bullet">
       <li>
-        <p><strong>Commercial spike-ins</strong>: If you have used spike-in that are commercially available, please include the kit name, catalogue number and dilution in the library construction protocol.</p>
+        <p><strong>Commercial spike-ins</strong></p>
+        <p> If you have used spike-in that are commercially available, please include the kit name, catalogue number and dilution in the library construction protocol.</p>
       </li>
       <li>
-        <p><strong>Custom spike-ins</strong>: If you have used a non-commercial spike-in set, describe this in the library construction protocol. Additionally, upload a table (tab-delimited text) with the names and concentrations of the spike-ins, and a <em>fasta</em> file containing the nucleotide sequences. <a href="https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-3624/E-MTAB-3624.additional.1.zip" class="readmore">Example: E-MTAB-3624.additional.1.zip</a>
+        <p><strong>Custom spike-ins</strong></p>
+        <p> If you have used a non-commercial spike-in set, describe this in the library construction protocol. Additionally, upload a table (tab-delimited text) with the names and concentrations of the spike-ins, and a <em>fasta</em> file containing the nucleotide sequences. <a href="https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-3624/E-MTAB-3624.additional.1.zip" class="readmore">Example: E-MTAB-3624.additional.1.zip</a>
         </p>
       </li>
       <li>
-        <p><strong>Spike-in annotation</strong>: You can include spike-in information at the cell level in the sample annotation under <strong>"spike in"</strong> and <strong>"spike in dilution"</strong>.</p>
+        <p><strong>Spike-in annotation</strong></p>
+        <p> You can include spike-in information at the cell level in the sample annotation under <strong>"spike in"</strong> and <strong>"spike in dilution"</strong>.</p>
         <p>Example of spike-in annotation</p>
         <table>
           <thead>
@@ -193,9 +205,8 @@
         </table>
       </li>
     </ul>
-
+    <hr />
     <h4>Unique Molecular Identifiers</h4>
-
     <ul class="no-bullet">
       <li>
         <p>If your single-cell protocol uses unique molecular identifiers (UMIs), all relevant information about the UMI barcodes should be included to enable re-analysis of the data. We suggest to include the following:</p>
@@ -206,6 +217,9 @@
         </ul>
       </li>
     </ul>
+    <hr />
+  </div>
+  </div>
 
   <br>
   <h4>3. Define library layout for multiplexed data</h4>
@@ -289,18 +303,20 @@
   <h3 id="FileFormats">File types and formats</h3>
 
     <h4>Raw data</h4>
+    <p>In addition to the rules below, all raw data must conform to the general <a href="accepted_sequencing_file_formats.html">accepted sequencing file formats.</p>
+
     <p>Raw read data should be submitted in <em>fastq.gz</em> format. Prepare one file per cell (or 2 if you have used paired-end sequencing), following the <a href="http://ena-docs.readthedocs.io/en/latest/format_01.html">general recommendations from the European Nucleotide Archive (ENA)</a>. </p>
     <p>An exception are droplet-based technologies like 10x and Drop-seq and other methods for which data is not demultiplexed, where we allow submission of multiplexed data. A few extra rules apply here.</p>
 
     <p>For <strong>10x technology</strong>, please provide <em>fastq.gz</em> files, e.g. as <a href="https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/mkfastq">generated by CellRanger software from bcl files</a>. These are usually 3-4 <em>fastq.gz</em> files per library, containing the cDNA read and several barcode reads in known positions.</p>
       <p>We can currently validate files that follow the 10x file naming conventions:</p>
       <ul>
-        <li>R1 + R2 + I1<li>
+        <li>R1 + R2 + I1</li>
         <li>R1 + R2 + R3 + I1</li>
         <li>RA + I1 + I2</li>
       </ul>
 
-    <p>For other formats where the data cannot be represented as 2 paired-end fastq files, please convert your raw data to <strong>unaligned BAM format</strong>. We recommend using the following SAM specification tags for the typical single cell barcode sequences: </p>
+    <p>For <strong>other formats</strong> where the data cannot be represented as 2 paired-end fastq files, please convert your raw data to <strong>unaligned BAM format</strong>. We recommend using the following SAM specification tags for the typical single cell barcode sequences: </p>
     <ul>
       <li> BC: Sample barcode sequence</li>
       <li> QT: Sample barcode quality</li>
@@ -310,6 +326,7 @@
       <li> QX: UMI barcode quality</li>
     </ul>
 
+    <br>
     <h4>Processed data</h4>
     <p>Processed data is welcome in addition to raw data. Most commonly this would be a raw or normalised read count matrix. The format of any matrix file should be tab-delimited text. But also other analysis results files can be included, e.g. alignment files, cluster or cell type annotations.</p>
 
@@ -361,7 +378,7 @@
         </tr>
       </tbody>
     </table>
-    <a href="https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-9684/E-MTAB-9684.processed.2.zip/Annotation_FUGI_R_D7119553.txt" class="readmore" target="_blank">Example: E-MTAB-9684 Annotation_FUGI_R_D7119553.txt</a>
+    <a href="https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-9684/E-MTAB-9684.processed.2.zip/Annotation_FUGI_R_D7119553.txt" class="readmore" target="_blank">Example: E-MTAB-9684</a>
     </p>
     <hr />
 
@@ -369,7 +386,7 @@
     <p>It is encouraged to upload any additional files that facilitate data analysis, e.g. text files containing lists of known barcodes in the library. These files will be linked to the experiment and don't need to be associated with any specific sample in the submission. Please leave a description of such files in an appropriate protocol, e.g. the normalisation data transformation protocol. <a href="https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6153/E-MTAB-6153.additional.1.zip/E-MTAB-6153_sample_barcodes.txt" class="readmore" target="_blank">Example: E-MTAB-6153_sample_barcodes.txt</a>
     </p>
     <p>Cell hashing and cell surface antibody readout are other areas where additional files are useful, as there is no standard format for encoding this in Annotare (yet). For <strong>cell hashing</strong> an additional table is needed with the individual sample annotations and respective barcodes. For <strong>cell surface antibody readout</strong>, such as CITE-seq, the file should include the antibody targets and their barcode sequence.
-    <a href="https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-9295/E-MTAB-9295.additional.1.zip/E-MTAB-9295_features.txt" class="readmore" target="_blank">Example: E-MTAB-6153_sample_barcodes.txt</a></p>
+    <a href="https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-9295/E-MTAB-9295.additional.1.zip/E-MTAB-9295_features.txt" class="readmore" target="_blank">Example: E-MTAB-9295_features.txt</a></p>
     <p><em>Note</em>: Currently there is no dedicated way to assign "additional files" in Annotare. Please use the "Processed Data" columns in the file assignment to attach such files to your submission.</p>
     <hr />
 
@@ -377,25 +394,28 @@
 
   <h3 id="Protocols">Protocols</h3>
   <h4>Sample collection protocol</h4>
-
-  <ul class="no-bullet">
-    <li>
-      <strong>Method of cell singularisation</strong>
-      <p> Please include a description of how the cells were treated and separated into single-cells, e.g. FACS or microfluidics (Fluidigm).</p><hr />
-    </li>
-  </ul>
+  <div class="row">
+  <div class="columns medium-11 medium-push-1">
+    <ul class="no-bullet">
+      <li>
+        <strong>Method of cell singularisation</strong>
+        <p> Please include a description of how the cells were treated and separated into single-cells, e.g. FACS or microfluidics (Fluidigm).</p><hr />
+      </li>
+    </ul>
+  </div>
+  </div>
 
   <h4>Library construction protocol</h4>
   <div class="row">
   <div class="columns medium-11 medium-push-1">
     <ul class="no-bullet">
       <li>
-        <strong>Single-cell library construction</strong>
+        <p><strong>Single-cell library construction</strong></p>
         <p>Please mention the type of single-cell library method that was used (e.g. Smart-seq2, 10x, Drop-seq) and give any relevant literature references.</p><hr />
       </li>
 
       <li>
-        <strong>Library construction kit</strong>
+        <p><strong>Library construction kit</strong></p>
         <p>Please include the name, manufacturer and catalogue number of the library preparation kit(s) that were used.</p><hr />
       </li>
     </ul>
@@ -415,8 +435,7 @@
   </div>
   <br>
 
-
-
+</div>
 
   <!-- side navigation -->
   <div class="small-12 medium-3 columns sidebar">
