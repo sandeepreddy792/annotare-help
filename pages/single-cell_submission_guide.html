@@ -30,6 +30,9 @@
   <br>
   <h3 id="SampleInfo">Sample information</h3>
 
+  <h4>What is a "sample" in a single-cell experiment?</h4>
+  </p>The general rule is to create and annotate <strong>1 sample per library</strong>. In plate-based methods, like Smart-seq2, one library will correspond to a single cell, which will be the sample. In case you have multiplexed data e.g. from droplet-based platforms like 10x, one library will contain several thousands of individual cells.</p>
+
   <h4>Single-cell specific attributes</h4>
 
     <ul class="no-bullet">
@@ -122,9 +125,170 @@
       </tbody>
     </table>
 
+  <hr />
   <br>
   <h3 id="LibraryInfo">Single cell library information</h3>
 
+  <h4>1. Pick library construction method </h4>
+  <p>Select the type of single cell library construction that you followed from <a href="https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0010183&viewMode=All&siblings=false">controlled vocabulary</a> drop-down menu. For some of the most commonly used methods, this will pre-fill the other fields with the default values. These can still be adjusted afterwards. </p>
+
+  <h4>2. Refine parameters</h4>
+  <p>Check each parameter carefully, selecting the suitable option from the drop-down menu. For some commonly used library constructions methods Annotare will show the default parameters of the protocol, you may still need to adjust those.</p>
+
+  <br>
+  <ul class="no-bullet">
+    <li>
+      <h5>Single Cell Isolation</h5>
+      <p>The method used for selection of single cells, to allow individual cell barcoding</p>
+    </li>
+    <li>
+      <h5>End Bias</h5>
+      <p>The end of the nucleic acid molecule that is preferentially sequenced (bias in read distribution)</p>
+    </li>
+    <li>
+      <h5>Input molecule</h5>
+      <p>The type or fraction of nucleic acid that was captured in the library</p>
+    </li>
+    <li>
+      <h5>Primer</h5>
+      <p>The type of primer used for reverse-transcription</p>
+    </li>
+  </ul>
+
+  <h5>Spike-in RNAs</h5>
+    <ul class="no-bullet">
+      <li>
+        <h5>Commercial spike-ins</h5>
+        <p>If you have used spike-in that are commercially available, please include the kit name, catalogue number and dilution in the library construction protocol.</p>
+      </li>
+      <li>
+        <h5>Custom spike-ins</h5>
+        <p>If you have used a non-commercial spike-in set, describe this in the library construction protocol. Additionally, upload a table (tab-delimited text) with the names and concentrations of the spike-ins, and a <em>fasta</em> file containing the nucleotide sequences. <a href="https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-3624/E-MTAB-3624.additional.1.zip" class="readmore">Example: E-MTAB-3624.additional.1.zip</a>
+        </p>
+      </li>
+      <li>
+        <h5>Spike-in annotation</h5>
+        <p>You can include spike-in information at the cell level in the sample annotation under <strong>"spike in"</strong> and <strong>"spike in dilution"</strong>.</p>
+        <p>Example of spike-in annotation</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Example</th>
+              <th>spike in</th>
+              <th>spike in dilution</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sample 1</td>
+              <td>ERCC mix1</td>
+              <td>1:40000</td>
+            </tr>
+            <tr>
+              <td>Sample 2</td>
+              <td>ERCC mix2</td>
+              <td>1:40000</td>
+            </tr>
+            <tr>
+              <td>Sample 3</td>
+              <td>ERCC mix1 and mix2</td>
+              <td>1:40000</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+    </ul>
+
+  <h5>Unique Molecular Identifiers</h5>
+
+    <ul class="no-bullet">
+      <li>
+        <p>If your single-cell protocol uses unique molecular identifiers (UMIs), all relevant information about the UMI barcodes should be included to enable re-analysis of the data. We suggest to include the following:</p>
+        <ul>
+          <li><strong>UMI barcode read</strong> (the file that contains the UMI). Values: read1/read2/index1/index2</li>
+          <li><strong>UMI barcode offset</strong> (start position of UMI barcode in the sequence). Values: (number, 0 for start of read)</li>
+          <li><strong>UMI barcode size</strong> (length of UMI barcode in bp). Values: (number)</li>
+        </ul>
+      </li>
+    </ul>
+
+  <br>
+  <h4>3. Define library layout for multiplexed data</h4>
+
+  <p>For 10x technology, ensure you have selected the correct <strong>version of the 10x chemistry</strong>, e.g. v2 or v3. <em>Note that Annotare currently only provides templates for gene expression experiments</em>.</p>
+  <p>For <strong>other large-scale single-cell sequencing methods</strong> or where modifications were done to the standard 10x protocol, please include specifications about the multiplexing and barcodes. We suggest to include the following to specify the positions and size of the barcodes:</p>
+  <table>
+        <thead>
+          <tr>
+            <th>Attribute</th>
+            <th>Description</th>
+            <th>Possible values</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>cDNA read</td>
+            <td>the file that contains the cDNA read</td>
+            <td>index1/index2/read1/read2</td>
+          </tr>
+          <tr>
+            <td>cDNA read offset</td>
+            <td>offset in sequence for cDNA read (in bp)</td>
+            <td>(number, 0 for start of read)</td>
+          </tr>
+          <tr>
+            <td>cDNA read size</td>
+            <td>length of cDNA read (in bp)</td>
+            <td>(number)</td>
+          </tr>
+          <tr>
+            <td>UMI barcode read</td>
+            <td>the file that contains the UMI barcode read</td>
+            <td>index1/index2/read1/read2</td>
+          </tr>
+          <tr>
+            <td>UMI barcode offset</td>
+            <td>offset in sequence for UMI barcode read (in bp)</td>
+            <td>(number, 0 for start of read)</td>
+          </tr>
+          <tr>
+            <td>UMI barcode size</td>
+            <td>length of UMI barcode read (in bp)</td>
+            <td>(number)</td>
+          </tr>
+          <tr>
+            <td>cell barcode read</td>
+            <td>the file that contains the cell barcode read</td>
+            <td>index1/index2/read1/read2</td>
+          </tr>
+          <tr>
+            <td>cell barcode offset</td>
+            <td>offset in sequence for cell barcode read (in bp)</td>
+            <td>(number, 0 for start of read)</td>
+          </tr>
+          <tr>
+            <td>cell barcode size</td>
+            <td>length of cell barcode read (in bp)</td>
+            <td>(number)</td>
+          </tr>
+          <tr>
+            <td>sample barcode read</td>
+            <td>the file that contains the sample barcode read</td>
+            <td>index1/index2/read1/read2</td>
+          </tr>
+          <tr>
+            <td>sample barcode offset</td>
+            <td>offset in sequence for sample barcode read (in bp)</td>
+            <td>(number, 0 for start of read)</td>
+          </tr>
+          <tr>
+            <td>sample barcode size</td>
+            <td>length of sample barcode read (in bp)</td>
+            <td>(number)</td>
+          </tr>
+        </tbody>
+      </table>
+  <hr />
 
   <br>
   <h3>Protocols</h3>
@@ -166,71 +330,8 @@
   </div>
   </div>
   <br>
-  <h4>Spike-in RNAs</h4>
 
-    <ul class="no-bullet">
-      <li>
-        <h5>Commercial spike-ins</h5>
-        <p>If you have used spike-in that are commercially available, please include the kit name, catalogue number and dilution in the library construction protocol.</p>
-      </li>
-      <hr />
-      <li>
-        <h5>Custom spike-ins</h5>
-        <p>If you have used a non-commercial spike-in set, describe this in the library construction protocol. Additionally, upload a table (tab-delimited text) with the names and concentrations of the spike-ins, and a <em>fasta</em> file containing the nucleotide sequences. <a href="https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-3624/E-MTAB-3624.additional.1.zip" class="readmore">Example: E-MTAB-3624.additional.1.zip</a>
-        </p>
-      </li>
-      <hr />
-      <li>
-        <h5>Spike-in annotation</h5>
-        <p>You can include spike-in information at the cell level in the sample annotation under <strong>"spike in"</strong> and <strong>"spike in dilution"</strong>.</p>
-        <p>Example of spike-in annotation</p>
-        <table>
-          <thead>
-            <tr>
-              <th>Example</th>
-              <th>spike in</th>
-              <th>spike in dilution</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Sample 1</td>
-              <td>ERCC mix1</td>
-              <td>1:40000</td>
-            </tr>
-            <tr>
-              <td>Sample 2</td>
-              <td>ERCC mix2</td>
-              <td>1:40000</td>
-            </tr>
-            <tr>
-              <td>Sample 3</td>
-              <td>ERCC mix1 and mix2</td>
-              <td>1:40000</td>
-            </tr>
-          </tbody>
-        </table>
-        <hr />
-      </li>
-    </ul>
 
-  <br>
-  <h4>Unique molecular identifiers</h4>
-  <div class="row">
-  <div class="columns medium-11 medium-push-1">
-    <ul class="no-bullet">
-      <li>
-        <p>If your single-cell protocol uses unique molecular identifiers (UMIs), all relevant information about the UMI barcodes should be included to enable re-analysis of the data. We suggest to include the following:</p>
-        <ul>
-          <li><strong>UMI barcode read</strong> (the file that contains the UMI). Values: read1/read2/index1/index2</li>
-          <li><strong>UMI barcode offset</strong> (start position of UMI barcode in the sequence). Values: (number, 0 for start of read)</li>
-          <li><strong>UMI barcode size</strong> (length of UMI barcode in bp). Values: (number)</li>
-        </ul>
-        <hr />
-      </li>
-    </ul>
-  </div>
-  </div>
   <br>
   <h3 id="FileFormats">File formats</h3>
   <div class="row">
@@ -265,90 +366,7 @@
   </div>
   </div>
   <br>
-  <h4>Library layout</h4>
-  <div class="row">
-  <div class="columns medium-11 medium-push-1">
-    <ul class="no-bullet">
-      <li><p>For 10x technology, include the <strong>version of the 10x chemistry</strong>, e.g. v1 or v2, and provide the exact name of the library construction kit and catalogue number in the "library construction protocol".
-      </p><hr />
-      </li>
-      <li><p>For <strong>other large-scale single-cell sequencing methods</strong> or where modifications were done to the standard 10x protocol, please include specifications about the multiplexing and barcodes. We suggest to include the following to specify the positions and size of the barcodes:</p>
-        <table>
-          <thead>
-            <tr>
-              <th>Attribute</th>
-              <th>Description</th>
-              <th>Possible values</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>cDNA read</td>
-              <td>the file that contains the cDNA read</td>
-              <td>index1/index2/read1/read2</td>
-            </tr>
-            <tr>
-              <td>cDNA read offset</td>
-              <td>offset in sequence for cDNA read (in bp)</td>
-              <td>(number, 0 for start of read)</td>
-            </tr>
-            <tr>
-              <td>cDNA read size</td>
-              <td>length of cDNA read (in bp)</td>
-              <td>(number)</td>
-            </tr>
-            <tr>
-              <td>UMI barcode read</td>
-              <td>the file that contains the UMI barcode read</td>
-              <td>index1/index2/read1/read2</td>
-            </tr>
-            <tr>
-              <td>UMI barcode offset</td>
-              <td>offset in sequence for UMI barcode read (in bp)</td>
-              <td>(number, 0 for start of read)</td>
-            </tr>
-            <tr>
-              <td>UMI barcode size</td>
-              <td>length of UMI barcode read (in bp)</td>
-              <td>(number)</td>
-            </tr>
-            <tr>
-              <td>cell barcode read</td>
-              <td>the file that contains the cell barcode read</td>
-              <td>index1/index2/read1/read2</td>
-            </tr>
-            <tr>
-              <td>cell barcode offset</td>
-              <td>offset in sequence for cell barcode read (in bp)</td>
-              <td>(number, 0 for start of read)</td>
-            </tr>
-            <tr>
-              <td>cell barcode size</td>
-              <td>length of cell barcode read (in bp)</td>
-              <td>(number)</td>
-            </tr>
-            <tr>
-              <td>sample barcode read</td>
-              <td>the file that contains the sample barcode read</td>
-              <td>index1/index2/read1/read2</td>
-            </tr>
-            <tr>
-              <td>sample barcode offset</td>
-              <td>offset in sequence for sample barcode read (in bp)</td>
-              <td>(number, 0 for start of read)</td>
-            </tr>
-            <tr>
-              <td>sample barcode size</td>
-              <td>length of sample barcode read (in bp)</td>
-              <td>(number)</td>
-            </tr>
-          </tbody>
-        </table>
-        <hr />
-      </li>
-    </ul>
-  </div>
-  </div>
+
   <br>
   <h4>File format for droplet-based technologies</h4>
   <div class="row">
