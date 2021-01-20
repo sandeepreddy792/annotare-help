@@ -30,7 +30,7 @@
   <h3 id="SampleInfo">Sample information</h3>
 
   <h4>What is a "sample" in a single-cell experiment?</h4>
-  </p>The general rule is to create and annotate <strong>1 sample per library</strong>. In plate-based methods, like Smart-seq2, one library will correspond to a single cell, which will be the sample. In case you have multiplexed data from droplet-based platforms like 10x, one library will contain several thousands of individual cells.</p>
+  <p>The general rule is to create and annotate <strong>1 sample per library</strong>. In plate-based methods, like Smart-seq2, one library will correspond to a single cell, which will be the sample. In case you have multiplexed data from droplet-based platforms like 10x, one library will contain several thousands of individual cells.</p>
 
   <h4>Single-cell specific attributes</h4>
 
@@ -51,14 +51,14 @@
       <hr />
       <li>
         <p><strong>Single cell well quality (pre-analysis)</strong><br>
-        If your single-cell experiment included visual inspection of the cells before lysis, you can include this information in the sample attributes as <strong>"single cell well quality"</strong>. The values for this attribute should be "OK" or "not OK" (i.e. the well should be discarded from data analysis). If you have more detailed information about the "bad" wells, the following terms should be used:
+        If your single-cell experiment included visual inspection of the cells before lysis, you can include this information in the sample attributes as <strong>"single cell well quality"</strong>. The values for this attribute should be "OK" or "not OK" (i.e. the well should be discarded from data analysis). If you have more detailed information about the "bad" wells, the following terms should be used:</p>
           <ul>
             <li>"debris"</li>
             <li>"multiple cells" or number of cells if known</li>
             <li>"dead cell"</li>
             <li>"no cell"</li>
           </ul>
-        <a href="https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-5522/samples/" class="readmore" target="_blank">Example: E-MTAB-5522</a></p>
+        <p><a href="https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-5522/samples/" class="readmore" target="_blank">Example: E-MTAB-5522</a></p>
       </li>
       <hr />
       <li>
@@ -339,7 +339,7 @@
     <h4>Processed data</h4>
     <p>Processed data is welcome in addition to raw data. Most commonly this would be a raw or normalised read count matrix. The format of any matrix file should be tab-delimited text. But also other analysis results files can be included, e.g. alignment files, cluster or cell type annotations.</p>
 
-    <p><strong>Inferred cell type annotations</strong> (see <a href="#SampleInfo">above</a>) are an important piece of metadata to enhance the value of the data. For multiplexed data, since the information about the individual cells can't be entered at the sample annotation or file level, it makes sense to include a processed data file with the cell-level annotations. These entities should be included in such a file:
+    <p><strong>Inferred cell type annotations</strong> (see <a href="#SampleInfo">above</a>) are an important piece of metadata to enhance the value of the data. For multiplexed data, since the information about the individual cells can't be entered at the sample annotation or file level, it makes sense to include a processed data file with the cell-level annotations. These entities should be included in such a file:</p>
 
     <div class="row">
     <div class="columns medium-11 medium-push-1">
@@ -389,10 +389,9 @@
         </tr>
       </tbody>
     </table>
-    <div class="row">
-    <div class="columns medium-11 medium-push-1">
-    <a href="https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-9684/E-MTAB-9684.processed.2.zip/Annotation_FUGI_R_D7119553.txt" class="readmore" target="_blank">Example: E-MTAB-9684</a>
-    </p>
+    </div >
+    </div >
+    <p><a href="https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-9684/E-MTAB-9684.processed.2.zip/Annotation_FUGI_R_D7119553.txt" class="readmore" target="_blank">Example: E-MTAB-9684</a></p>
     <hr />
 
     <h4>Additional files</h4>
