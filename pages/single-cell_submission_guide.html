@@ -43,7 +43,7 @@
     <ul class="no-bullet">
       <li>
         <p><strong>Inferred cell type</strong><br>
-        If your experiment involves discovering new cell types or you work with pooled cells from a whole organ or organism, the precise cell type might be undefined at the start of the experiment but inferred later during the analysis. In that case, annotate the samples with the inferred cells type using the attribute <strong>"inferred cell type"</strong>. The attribute "cell type" should refer to the input cell type that is known at the start of the experiment. <br><br>
+        If your experiment involves discovering new cell types or you work with pooled cells from a whole organ or organism, the precise cell type might be undefined at the start of the experiment but inferred later during the analysis. In that case, annotate the samples with the inferred cells type using the attribute <strong>"inferred cell type"</strong>. The attribute "cell type" should refer to the input cell type that is known at the start of the experiment. <br>
         If you have multiplexed data and cannot enter this in the samples table, please include the annotations in a separate processed data file (<a href="#ProcessedData">see below</a>).<br>
         <a href="https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-5953/samples/" class="readmore" target="_blank">Example: E-MTAB-5953</a>
         </p>
@@ -78,8 +78,7 @@
 
   <br>
   <h5>Examples of single-cell sample attributes</h5>
-  <div class="row">
-  <div class="columns medium-11 medium-push-1">
+
   <table>
     <thead>
       <tr>
@@ -135,10 +134,8 @@
       </tr>
     </tbody>
   </table>
-  </div>
-  </div>
-  <hr />
 
+  <hr />
   <br>
   <h3 id="LibraryInfo">Single cell library information</h3>
 
@@ -149,8 +146,7 @@
   <p>Check each parameter carefully, selecting the suitable option from the drop-down menu. For some commonly used library constructions methods Annotare will show the default parameters of the protocol, you may still need to adjust those.</p>
 
   <br>
-  <div class="row">
-  <div class="columns medium-11 medium-push-1">
+
     <h5>General description</h5>
     <ul class="no-bullet">
       <li>
@@ -227,8 +223,6 @@
       </li>
     </ul>
     <hr />
-  </div>
-  </div>
 
   <br>
   <h4>3. Define library layout for multiplexed data</h4>
@@ -236,8 +230,6 @@
   <p>For 10x technology, ensure you have selected the correct <strong>version of the 10x chemistry</strong>, e.g. v2 or v3. <em>Note that Annotare currently only provides templates for gene expression experiments</em>.</p>
   <p>For <strong>other large-scale single-cell sequencing methods</strong> or where modifications were done to the standard 10x protocol, please include specifications about the multiplexing and barcodes. We suggest to include the following to specify the positions and size of the barcodes:</p>
 
-  <div class="row">
-  <div class="columns medium-11 medium-push-1">
   <table>
         <thead>
           <tr>
@@ -309,8 +301,7 @@
           </tr>
         </tbody>
       </table>
-  </div>
-  </div>
+
   <hr />
 
   <br>
@@ -346,8 +337,7 @@
 
     <p><strong>Inferred cell type annotations</strong> (<a href="#SampleInfo">see above</a>) are a very important piece of metadata that greatly enhance the value of single-cell sequencing data stored in ArrayExpress and we very much encourage all submitters to add this information to their submission. Since information about individual cells can't be entered at the sample annotation or file level for multiplexed data, please include inferred cell type annotations and any other cell-level annotations as a processed data file. Any such file should at least contain the following information, so the correct connection between the annotations and the the relevant samples and sequencing reads can be made:
     </p>
-    <div class="row">
-    <div class="columns medium-11 medium-push-1">
+
     <table>
       <tbody>
         <tr>
@@ -394,11 +384,10 @@
         </tr>
       </tbody>
     </table>
-    </div >
-    </div >
+  
     <p><a href="https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-9684/E-MTAB-9684.processed.2.zip/Annotation_FUGI_R_D7119553.txt" class="readmore" target="_blank">Example: E-MTAB-9684</a></p>
     <hr />
-
+    <br>
     <h4 id="AdditionalData">Additional files</h4>
     <p>It is encouraged to upload any additional files that facilitate data analysis, e.g. text files containing lists of known barcodes in the library. These files will be linked to the experiment and don't need to be associated with any specific sample in the submission. Please leave a description of such files in an appropriate protocol, e.g. the normalisation data transformation protocol. <a href="https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6153/E-MTAB-6153.additional.1.zip/E-MTAB-6153_sample_barcodes.txt" class="readmore" target="_blank">Example: E-MTAB-6153_sample_barcodes.txt</a>
     </p>
