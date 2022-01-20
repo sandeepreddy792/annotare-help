@@ -1,16 +1,7 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <title>Array design submissions &lt; Guide &lt; Annotare &lt; EMBL-EBI</title>
-  <link rel="stylesheet" href="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.3/css/ebi-global.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.3/css/ebi-global.min.css" type="text/css" media="all"/>
-  <link rel="stylesheet" href="https://ebi.emblstatic.net/web_guidelines/EBI-Icon-fonts/v1.3/fonts.css" type="text/css" media="all"/>
-
-  <link rel="stylesheet" href="../css/annotare_help_style.css ">
-</head>
-
-<body>
+---
+layout: default
+title: Annotare Help Page
+---
 
 <section id="annotare-help">
   <div class="small-12 medium-9 columns">
@@ -35,13 +26,13 @@
 
     <p>Pick a template that suits your microarray. (Check out this <a href="../images/creating_an_adf.html#Concepts">concepts page</a> if you are unsure whether your microarray contains features, reporters or composite elements.)</p>
     <ul>
-      <li>Commercially available arrays or custom arrays from commercial manufacturers (e.g. NimbleGen, Agilent, Affymetrix, Illumina), just metadata header to fill in, and send us any supporting files*: <a href="../images/commercial_array_header_template.xls">commercial array design header template</a></li>
+      <li>Commercially available arrays or custom arrays from commercial manufacturers (e.g. NimbleGen, Agilent, Affymetrix, Illumina), just metadata header to fill in, and send us any supporting files*: <a href="../assets/img/commercial_array_header_template.xls">commercial array design header template</a></li>
 
-      <li>Custom spotted arrays with features in block row / block column / row / column grid coordinates: <a href="../images/spotted_array_ADF_template.xls">spotted array template</a></li>
+      <li>Custom spotted arrays with features in block row / block column / row / column grid coordinates: <a href="../assets/img/spotted_array_ADF_template.xls">spotted array template</a></li>
 
-      <li>Custom arrays with only reporters (probes), without grid coordinate information: <a href="../images/reporter_only_array_ADF_template.xls">reporter array template</a></li>
+      <li>Custom arrays with only reporters (probes), without grid coordinate information: <a href="../assets/img/reporter_only_array_ADF_template.xls">reporter array template</a></li>
 
-      <li>Custom arrays with reporters and composite elements: <a href="../images/composite_element_array_ADF_template.xls">composite array template</a></li>
+      <li>Custom arrays with reporters and composite elements: <a href="../assets/img/composite_element_array_ADF_template.xls">composite array template</a></li>
     </ul>
 
     <p><em>*Supporting files are those from the microarray's manufacturer containing information of each probe, e.g. NDF files for NimbleGen arrays, GAL files for spotted arrays.  An ArrayExpress curator will convert your supporting file into the <a href='creating_an_adf.html#WhatIsADF'>ADF table</a>, and append it to the metadata header you fill in to create a complete, valid ADF.</em></p>
@@ -55,7 +46,7 @@
     <p>When you've finished filling in the template, please save the file in <strong>tab-delimited text (*.txt)</strong> format.  (If you're unsure about this format, this is how you do it with <a href="http://office.microsoft.com/en-gb/excel-help/import-or-export-text-txt-or-csv-files-HP010342598.aspx">Microsoft Excel</a> or <a href="https://wiki.openoffice.org/wiki/Documentation/FAQ/Calc/Files/How_do_I_open_a_tab-delimited_file_in_OpenOffice.org_Spreadsheet%3F_What_if_I_have_a_different_type_of_delimiter%3F">OpenOffice Calc</a>.)</p>
 
     <p>Below is an example snippet of a filled template (text in light blue filled in by the submitter):</p>
-    <img src="../images/adf_snippet.png" alt="ADF_snippet" />
+    <img src="../assets/img/adf_snippet.png" alt="ADF_snippet" />
     <br>
 
     <p>&nbsp;</p>
@@ -136,17 +127,3 @@
   </div> <!-- /medium-3 -->
 
 </section>
-
-<!-- For importing into Annotare page -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.2.1/iframeResizer.contentWindow.min.js"></script>
-
-<!-- Scripts from the EMBL-EBI foundation framework v1.3 -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script defer="defer" src="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.3/js/script.js"></script>
-<script src="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.3/libraries/foundation-6/js/foundation.js"></script>
-<script src="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.3/js/foundationExtendEBI.js"></script>
-<script type="text/JavaScript">$(document).foundation();</script>
-<script type="text/JavaScript">$(document).foundationExtendEBI();</script>
-
-</body>
-</html>

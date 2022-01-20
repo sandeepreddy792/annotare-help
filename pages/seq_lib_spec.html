@@ -1,16 +1,7 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <title>Sequencing library information &lt; Guide &lt; Annotare &lt; EMBL-EBI</title>
-  <link rel="stylesheet" href="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.3/css/ebi-global.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.3/css/ebi-global.min.css" type="text/css" media="all"/>
-  <link rel="stylesheet" href="https://ebi.emblstatic.net/web_guidelines/EBI-Icon-fonts/v1.3/fonts.css" type="text/css" media="all"/>
-
-  <link rel="stylesheet" href="../css/annotare_help_style.css ">
-</head>
-
-<body>
+---
+layout: default
+title: Annotare Help Page
+---
 
 <section id="annotare-help">
   <div class="small-12 medium-9 columns">
@@ -34,7 +25,7 @@
         <li><em>Nominal Length</em>: the expected size of the insert. The insert being
             the fragment sequenced, as chosen from size fractionation (e.g. cutting out a band from an agarose gel). If nominal
             length is 500bp, put down "500" as the value.  No decimals or ranges (e.g. 100-200) allowed, and it cannot be zero. This information guides sequence aligner algorithms to place the two mates of a pair of reads on the genome sequences separated by a reasonable distance. Therefore, the nominal length value does not need to be absolutely precise, but also should not be an order of magnitude off:<br>
-            <img src="../images/nominal_length.png" alt="nominal_length" style="width:60%;"/><br><br></li>
+            <img src="../assets/img/nominal_length.png" alt="nominal_length" style="width:60%;"/><br><br></li>
         <li><em>Nominal SDev</em>: the standard deviation of the nominal length. Decimals are allowed (e.g. 56.4) but no ranges
             (e.g. 34.5-42.6).</li>
         <li><em>Orientation</em>: the orientation of the two reads. "5'-3'-3'-5'" for
@@ -45,7 +36,7 @@
     <ul>
         <li><em>Library Strand</em>: whether the 'first strand' or 'second strand' of cDNA was used to prepare the library. <i>Note this should not be confused with the forward and reverse strands one would get in a paired-end sequencing reaction.</i><br><br>
             "First strand" corresponds to the "template"/ "antisense" / "-" strand and has the reverse complement sequence of the transcribed mRNA, wherease "second strand" corresponds to the "coding" /"sense" /"+" strand which has the same sequence as the RNA that is transcribed.  The commonly used <a href="http://nar.oxfordjournals.org/content/37/18/e123.long" target="_blank">dUTP-based protocol</a> sequences the 'first strand'. For paired-end strand-specific sequencing studies, sequencing the 'first strand" is sometimes referred to as "mate2_sense" (i.e. mate 2 of the paired-end reads comes from the sense strand). Please see the diagram below for further information:<br>
-            <img src="../images/strand_specificity.png" alt="strand_specificity" style="width:60%"/></li>
+            <img src="../assets/img/strand_specificity.png" alt="strand_specificity" style="width:60%"/></li>
     </ul>
     <br>
   </div>
@@ -110,17 +101,3 @@
   </div> <!-- /medium-3 -->
 
 </section>
-
-<!-- For importing into Annotare page -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.2.1/iframeResizer.contentWindow.min.js"></script>
-
-<!-- Scripts from the EMBL-EBI foundation framework v1.3 -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script defer="defer" src="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.3/js/script.js"></script>
-<script src="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.3/libraries/foundation-6/js/foundation.js"></script>
-<script src="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.3/js/foundationExtendEBI.js"></script>
-<script type="text/JavaScript">$(document).foundation();</script>
-<script type="text/JavaScript">$(document).foundationExtendEBI();</script>
-
-</body>
-</html>

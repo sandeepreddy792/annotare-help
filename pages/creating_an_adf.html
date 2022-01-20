@@ -1,16 +1,7 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <title>Creating an ADF &lt; Guide &lt; Annotare &lt; EMBL-EBI</title>
-  <link rel="stylesheet" href="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.3/css/ebi-global.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.3/css/ebi-global.min.css" type="text/css" media="all"/>
-  <link rel="stylesheet" href="https://ebi.emblstatic.net/web_guidelines/EBI-Icon-fonts/v1.3/fonts.css" type="text/css" media="all"/>
-
-  <link rel="stylesheet" href="../css/annotare_help_style.css ">
-</head>
-
-<body>
+---
+layout: default
+title: Annotare Help Page
+---
 
 <section id="annotare-help">
   <div class="small-12 medium-9 columns">
@@ -45,7 +36,7 @@
             or <a href="http://office.microsoft.com/en-gb/excel-help/import-or-export-text-txt-or-csv-files-HP010342598.aspx">Microsoft Excel</a>.
 
         <p>Here is a snippet of an ADF document:</p>
-        <img src="../images/adf_snippet.png" alt="ADF_snippet" />
+        <img src="../assets/img/adf_snippet.png" alt="ADF_snippet" />
         <p>&nbsp;</p>
         <hr />
 
@@ -56,7 +47,7 @@
             you download one of our <a href="adf_quick_start.html#templates">ADF templates</a> so you don't need to insert them from scratch.  <em>Please do not edit the headings,
                 but fill in each field as much as possible</em>, like the blue text below:</p>
 
-        <img src="../images/adf_how_to_fill.png" alt="ADF_how_to_fill" />
+        <img src="../assets/img/adf_how_to_fill.png" alt="ADF_how_to_fill" />
         <br>
 
         <p>&nbsp;</p>
@@ -187,7 +178,7 @@
             <li><strong>Features (for spotted arrays only):</strong> Each spot on the array is called a feature. The position of each feature is described by 4 coordinates, each has its dedicated column in the ADF table: <strong><code>Block Column</code></strong>, <strong><code>Block Row</code></strong>, <strong><code>Column</code></strong> and <strong><code>Row</code></strong>. Each set of 4 coordinates represents a unique position on the microarray, so features cannot be duplicated on an array. Include all features in your ADF file, even if there is nothing spotted there (e.g. control spots). Here is a schematic diagram showing the 4 coordinates:<br>
 
                 <br>
-                <img src="../images/adf_br_bc_r_c_diagram.png" alt="feature_coordinates_diagram" style="width: 50%; height: 50%">
+                <img src="../assets/img/adf_br_bc_r_c_diagram.png" alt="feature_coordinates_diagram" style="width: 50%; height: 50%">
                 <br>
                 <br><br></li>
 
@@ -198,7 +189,7 @@
 
         <p>&nbsp;</p>
         <p>Here is a snippet from a hypothetical example of an array design, showing seven features, two reporters and one composite element:</p>
-        <img src="../images/adf_concepts.png" alt="ADF_concepts"/>
+        <img src="../assets/img/adf_concepts.png" alt="ADF_concepts"/>
 
         <p>&nbsp;</p>
 
@@ -222,7 +213,7 @@
 
         <p>&nbsp;</p>
         <p>Following on the <a href="#Concepts">example in section 3.1</a>, this is how the hypothetical reporter annotations would be like. Notice how you can enter multiple accessions from the same database by separating them with semicolons:</p>
-        <img src="../images/adf_reporter_annotation_example.png" alt="reporter_annotation_example" />
+        <img src="../assets/img/adf_reporter_annotation_example.png" alt="reporter_annotation_example" />
         <br>
 
         <p style="text-align: right;"><a href="#top" class="linktotop">Top</a></p>
@@ -277,7 +268,7 @@
     </table>
         <p>&nbsp;</p>
         <p>Here is an example of reporter roles in the ADF table:</p>
-        <img src="../images/adf_reporter_role.png" alt="reporter_role_example" />
+        <img src="../assets/img/adf_reporter_role.png" alt="reporter_role_example" />
         <br>
         <p>&nbsp;</p>
 
@@ -286,7 +277,7 @@
         <p>Where reporters were designed from more than one species, you can indicate the species source in the <strong><code>Reporter Group [species]</code></strong> column. Use species name from Latin binomial nomenclature where possible, e.g. <code>Homo sapiens</code>.</p>
 
         <p>An example of a microarray with probes derived from viral and human microRNA sequences:</p>
-        <img src="../images/adf_species_group.png" alt="reporter_group_species_example" />
+        <img src="../assets/img/adf_species_group.png" alt="reporter_group_species_example" />
         <br>
 
 
@@ -364,17 +355,3 @@
   </div> <!-- /medium-3 -->
 
 </section>
-
-<!-- For importing into Annotare page -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.2.1/iframeResizer.contentWindow.min.js"></script>
-
-<!-- Scripts from the EMBL-EBI foundation framework v1.3 -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script defer="defer" src="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.3/js/script.js"></script>
-<script src="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.3/libraries/foundation-6/js/foundation.js"></script>
-<script src="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.3/js/foundationExtendEBI.js"></script>
-<script type="text/JavaScript">$(document).foundation();</script>
-<script type="text/JavaScript">$(document).foundationExtendEBI();</script>
-
-</body>
-</html>
