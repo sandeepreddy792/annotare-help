@@ -32,8 +32,8 @@ title: Annotare Help Page
         </ul>
 
         <p>The ADF file is always in <em>tab-delimited text (*.txt)</em> format, and will open
-            in any spreadsheet program for viewing or editing, e.g. <a href="https://wiki.openoffice.org/wiki/Documentation/FAQ/Calc/Files/How_do_I_open_a_tab-delimited_file_in_OpenOffice.org_Spreadsheet%3F_What_if_I_have_a_different_type_of_delimiter%3F">OpenOffice Calc</a>
-            or <a href="http://office.microsoft.com/en-gb/excel-help/import-or-export-text-txt-or-csv-files-HP010342598.aspx">Microsoft Excel</a>.
+            in any spreadsheet program for viewing or editing, e.g. <a target="_blank" href="https://wiki.openoffice.org/wiki/Documentation/FAQ/Calc/Files/How_do_I_open_a_tab-delimited_file_in_OpenOffice.org_Spreadsheet%3F_What_if_I_have_a_different_type_of_delimiter%3F">OpenOffice Calc</a>
+            or <a target="_blank" href="http://office.microsoft.com/en-gb/excel-help/import-or-export-text-txt-or-csv-files-HP010342598.aspx">Microsoft Excel</a>.
 
         <p>Here is a snippet of an ADF document:</p>
         <img src="../assets/img/adf_snippet.png" alt="ADF_snippet" />
@@ -44,7 +44,7 @@ title: Annotare Help Page
 
         <p>Each row (field) of meta data starts with a heading (bold in the screenshot below),
             each appearing only once and coming from a controlled vocabulary. The headings would be pre-filled for you when
-            you download one of our <a href="adf_quick_start.html#templates">ADF templates</a> so you don't need to insert them from scratch.  <em>Please do not edit the headings,
+            you download one of our <a target="_parent" href="https://www.ebi.ac.uk/fg/annotare/help/adf_quick_start.html#templates">ADF templates</a> so you don't need to insert them from scratch.  <em>Please do not edit the headings,
                 but fill in each field as much as possible</em>, like the blue text below:</p>
 
         <img src="../assets/img/adf_how_to_fill.png" alt="ADF_how_to_fill" />
@@ -151,7 +151,7 @@ title: Annotare Help Page
                 <code>Reporter Database Entry [uniprot]</code>, the cross-referenced
                 resource's name needs to be entered here, so the resource can be looked
                 up via the URL in <code>Term Source File</code> (see header number 13 below).</td>
-            <td>External database names from this <a href="adf_allowed_db_list.html">allowed list</a></td>
+            <td>External database names from this <a target="_parent" href="https://www.ebi.ac.uk/fg/annotare/help/adf_allowed_db_list.html">allowed list</a></td>
             <td>uniprot</td>
         </tr>
         <tr>
@@ -169,7 +169,7 @@ title: Annotare Help Page
 
         <h3><a id="ADFTable"></a>ADF table</h3>
 
-        <p>Just like the metadata header fields, column headings in the ADF table come from a controlled vocabulary.  Please use one of the  <a href="adf_quick_start.html#templates">ADF templates</a>, where correct headings have been prefilled for you, saving you inserting them from scratch. <em>Please don't change the column headings in the template.</em>.</p>
+        <p>Just like the metadata header fields, column headings in the ADF table come from a controlled vocabulary.  Please use one of the  <a target="_parent" href="https://www.ebi.ac.uk/fg/annotare/help/adf_quick_start.html#templates">ADF templates</a>, where correct headings have been prefilled for you, saving you inserting them from scratch. <em>Please don't change the column headings in the template.</em>.</p>
 
 
         <h4><a id="Concepts"></a>3.1. Features, reporters and composite elements</h4>
@@ -202,13 +202,13 @@ title: Annotare Help Page
         <p>For reporters with no cross-references, e.g. a blank control spot, leave annotation <strong>blank</strong>. Do not put down custom values such as <code>"NA"</code>, <code>"empty"</code> or <code>"unmapped"</code>, as curators will validate the annotation values against expected formats and custom values will not be accepted.</p>
 
         <ul>
-            <li><strong>Reporter Sequence:</strong> Use <a href="http://www.bioinformatics.org/sms/iupac.html">single-letter IUPAC codes</a> for all arrays (including peptide arrays).  All experimental reporters and control reporters of type "array control biosequence" should have sequence annotation. In contrast, control reporters which are empty (e.g. nothing spotted on the array), buffer-only or label-only should not have sequence annotation. See <a href ="#ReporterRole">section 3.3 below</a> for more details on experimental and control reporters.<br><br></li>
+            <li><strong>Reporter Sequence:</strong> Use <a target="_blank" href="http://www.bioinformatics.org/sms/iupac.html">single-letter IUPAC codes</a> for all arrays (including peptide arrays).  All experimental reporters and control reporters of type "array control biosequence" should have sequence annotation. In contrast, control reporters which are empty (e.g. nothing spotted on the array), buffer-only or label-only should not have sequence annotation. See <a href ="#ReporterRole">section 3.3 below</a> for more details on experimental and control reporters.<br><br></li>
 
-            <li><strong>Cross references to external databases:</strong> Look up the abbreviated name of the cross-referenced database from <a href="adf_allowed_db_list.html">this allowed list</a>, and insert it inside the square brackets of the column heading <code>Reporter Database Entry [xxx]</code>, e.g. <code>Reporter Database Entry [genbank]</code>. Then, fill the column with the appropriate accession*.  You can enter multiple accessions from the same database by separating them with semicolons, e.g. <code>AJ12345;BX45678</code>. For annotations from different database sources, they must be provided in separate <code>Reporter Database Entry [xxx]</code> columns. Don't forget to add the database name and URL to the <code>Term Source Name</code> and <code>Term Source File</code> fields of the <a href="#HeaderFieldList">ADF header</a>.<br><br>
+            <li><strong>Cross references to external databases:</strong> Look up the abbreviated name of the cross-referenced database from <a target="_parent" href="https://www.ebi.ac.uk/fg/annotare/help/adf_allowed_db_list.html">this allowed list</a>, and insert it inside the square brackets of the column heading <code>Reporter Database Entry [xxx]</code>, e.g. <code>Reporter Database Entry [genbank]</code>. Then, fill the column with the appropriate accession*.  You can enter multiple accessions from the same database by separating them with semicolons, e.g. <code>AJ12345;BX45678</code>. For annotations from different database sources, they must be provided in separate <code>Reporter Database Entry [xxx]</code> columns. Don't forget to add the database name and URL to the <code>Term Source Name</code> and <code>Term Source File</code> fields of the <a href="#HeaderFieldList">ADF header</a>.<br><br>
                 If the database you would like to cite is not already on the list, please email us at <a href="mailto:annotare@ebi.ac.uk">annotare@ebi.ac.uk</a> with the database URL and we will look into adding it to the list of allowed databases.<br><br>
-                <em>* We rely on accession numbers and not free-text names, because accessions are usually stable and traceable (even for deprecated ones).  Morever, each database usually enforces a certain format for the accessions, which makes computational data-mining a lot easier. E.g. <a href="http://www.ncbi.nlm.nih.gov/refseq/about/">NCBI RefSeq curated cDNAs</a> always have accessions start with <code>NM_</code> followed by a few digits.</em><br><br></li>
+                <em>* We rely on accession numbers and not free-text names, because accessions are usually stable and traceable (even for deprecated ones).  Morever, each database usually enforces a certain format for the accessions, which makes computational data-mining a lot easier. E.g. <a target="_blank" href="http://www.ncbi.nlm.nih.gov/refseq/about/">NCBI RefSeq curated cDNAs</a> always have accessions start with <code>NM_</code> followed by a few digits.</em><br><br></li>
 
-            <li><strong>Genomic mapping location:</strong> Instead of an abbreviated database name, enter <code>chromosome_coordinate:&lt;genome_assembly_name&gt;</code> inside the square brackets of <code>Reporter Database Entry [xxx]</code>, e.g. <code>Reporter Database Entry [chromosome_coordinate:GRCh38]</code>.  Try to use official genome assembly names from <a href="http://www.insdc.org/">public databases (ENA, GenBank or DDBJ)</a>, e.g <a href="http://www.ebi.ac.uk/ena/data/view/GCA_000001405">GRCh38</a> for the human genome assembly released on 21 December 2013. Genomic coordinates in the column should follow this format: <code>chrName:start position-end position</code>, e.g. <code>chr1:1234-5678</code>.</li>
+            <li><strong>Genomic mapping location:</strong> Instead of an abbreviated database name, enter <code>chromosome_coordinate:&lt;genome_assembly_name&gt;</code> inside the square brackets of <code>Reporter Database Entry [xxx]</code>, e.g. <code>Reporter Database Entry [chromosome_coordinate:GRCh38]</code>.  Try to use official genome assembly names from <a target="_blank" href="http://www.insdc.org/">public databases (ENA, GenBank or DDBJ)</a>, e.g <a target="_blank" href="http://www.ebi.ac.uk/ena/data/view/GCA_000001405">GRCh38</a> for the human genome assembly released on 21 December 2013. Genomic coordinates in the column should follow this format: <code>chrName:start position-end position</code>, e.g. <code>chr1:1234-5678</code>.</li>
         </ul>
 
         <p>&nbsp;</p>
@@ -223,7 +223,7 @@ title: Annotare Help Page
 
         <p>For each reporter, enter its role: <code>experimental</code> or <code>control</code> in the <strong><code>Reporter Group [role]</code></strong> column.</p>
 
-        <p>For each control reporter, describe what type of control it is in the <strong><code>Control Type</code></strong> column.  <em>(Do not fill in this column for any experimental reporters.)</em> The allowed control type values taken from <a href="http://www.ebi.ac.uk/efo">Experimental Factor Ontology (EFO)</a>. Here is a glossary:</p>
+        <p>For each control reporter, describe what type of control it is in the <strong><code>Control Type</code></strong> column.  <em>(Do not fill in this column for any experimental reporters.)</em> The allowed control type values taken from <a target="_blank" href="http://www.ebi.ac.uk/efo">Experimental Factor Ontology (EFO)</a>. Here is a glossary:</p>
 
         <a id="ControlTypesList"></a><table class="example">
         <thead><tr>
@@ -292,63 +292,63 @@ title: Annotare Help Page
   <!-- side navigation -->
   <div class="small-12 medium-3 columns sidebar">
     <ul class="vertical menu accordion-menu" data-accordion-menu>
-      <li><a href="index.html" class="active" >Submission guide</a></li>
+      <li><a target="_parent" href="https://www.ebi.ac.uk/fg/annotare/help/index.html" class="active" >Submission guide</a></li>
       <li><a>Before you start</a>
         <ul class="menu vertical nested is-active">
-          <li><a href="what_to_submit.html">Submission overview</a></li>
-          <li><a href="">Accepted file formats</a>
+          <li><a target="_parent" href="https://www.ebi.ac.uk/fg/annotare/help/what_to_submit.html">Submission overview</a></li>
+          <li><a>Accepted file formats</a>
             <ul>
-              <li><a href="accepted_raw_ma_file_formats.html">Microarray raw data</a></li>
-              <li><a href="accepted_processed_ma_file_formats.html">Microarray processed data</a></li>
-              <li><a href="accepted_sequencing_file_formats.html#raw_data_files">Sequencing raw data</a></li>
-              <li><a href="accepted_sequencing_file_formats.html#processed_data">Sequencing processed data</a></li>
+              <li><a target="_parent" href="https://www.ebi.ac.uk/fg/annotare/help/accepted_raw_ma_file_formats.html">Microarray raw data</a></li>
+              <li><a target="_parent" href="https://www.ebi.ac.uk/fg/annotare/help/accepted_processed_ma_file_formats.html">Microarray processed data</a></li>
+              <li><a target="_parent" href="https://www.ebi.ac.uk/fg/annotare/help/accepted_sequencing_file_formats.html#raw_data_files">Sequencing raw data</a></li>
+              <li><a target="_parent" href="https://www.ebi.ac.uk/fg/annotare/help/accepted_sequencing_file_formats.html#processed_data">Sequencing processed data</a></li>
             </ul>
           </li>
-          <li><a href="pre-submission_checklist.html">Pre-submission checklist</a></li>
-          <li><a href="adf_submissions_overview.html">Array design submissions</a>
+          <li><a target="_parent" href="https://www.ebi.ac.uk/fg/annotare/help/pre-submission_checklist.html">Pre-submission checklist</a></li>
+          <li><a target="_parent" href="https://www.ebi.ac.uk/fg/annotare/help/adf_submissions_overview.html">Array design submissions</a>
             <ul class="menu vertical nested is-active">
-              <li><a href="adf_submissions_overview.html">Array design submission overview</a></li>
-              <li><a class="active" href="creating_an_adf.html">Creating an ADF</a></li>
-              <li><a href="adf_allowed_db_list.html">Allowed database names</a></li>
+              <li><a target="_parent" href="https://www.ebi.ac.uk/fg/annotare/help/adf_submissions_overview.html">Array design submission overview</a></li>
+              <li><a class="active" target="_parent" href="https://www.ebi.ac.uk/fg/annotare/help/creating_an_adf.html">Creating an ADF</a></li>
+              <li><a target="_parent" href="https://www.ebi.ac.uk/fg/annotare/help/adf_allowed_db_list.html">Allowed database names</a></li>
             </ul>
           </li>
         </ul>
       </li>
       <li><a>Annotare step-by-step</a>
         <ul class="menu vertical nested">
-          <li><a href="getting_started.html">Getting started</a></li>
-          <li><a href="time_saving_features.html">Time-saving features</a></li>
-          <li><a href="describe_exp.html">Describe experiment</a></li>
-          <li><a href="sample_attributes.html">Sample attributes and protocols</a></li>
-          <li><a href="">Technology-specific details</a>
+          <li><a target="_parent" href="https://www.ebi.ac.uk/fg/annotare/help/getting_started.html">Getting started</a></li>
+          <li><a target="_parent" href="https://www.ebi.ac.uk/fg/annotare/help/time_saving_features.html">Time-saving features</a></li>
+          <li><a target="_parent" href="https://www.ebi.ac.uk/fg/annotare/help/describe_exp.html">Describe experiment</a></li>
+          <li><a target="_parent" href="https://www.ebi.ac.uk/fg/annotare/help/sample_attributes.html">Sample attributes and protocols</a></li>
+          <li><a>Technology-specific details</a>
             <ul>
-              <li><a href="seq_lib_spec.html">Sequencing library information</a></li>
-              <li><a href="single-cell_submission_guide.html">Single cell information</a></li>
-              <li><a href="two_color_ma.html">Two-colour experiments</a></li>
+              <li><a target="_parent" href="https://www.ebi.ac.uk/fg/annotare/help/seq_lib_spec.html">Sequencing library information</a></li>
+              <li><a target="_parent" href="https://www.ebi.ac.uk/fg/annotare/help/single-cell_submission_guide.html">Single cell information</a></li>
+              <li><a target="_parent" href="https://www.ebi.ac.uk/fg/annotare/help/two_color_ma.html">Two-colour experiments</a></li>
             </ul>
           </li>
-          <li><a href="">Upload and assign files</a>
+          <li><a>Upload and assign files</a>
             <ul>
-              <li><a href="file_upload.html#direct">Direct upload</a></li>
-              <li><a href="ftp_upload.html">FTP/Aspera upload</a></li>
-              <li><a href="file_upload.html#ftp">Import FTP/Aspera uploaded files</a></li>
-              <li><a href="assign_files.html">Assign files</a></li>
+              <li><a target="_parent" href="https://www.ebi.ac.uk/fg/annotare/help/file_upload.html#direct">Direct upload</a></li>
+              <li><a target="_parent" href="https://www.ebi.ac.uk/fg/annotare/help/ftp_upload.html">FTP/Aspera upload</a></li>
+              <li><a target="_parent" href="https://www.ebi.ac.uk/fg/annotare/help/file_upload.html#ftp">Import FTP/Aspera uploaded files</a></li>
+              <li><a target="_parent" href="https://www.ebi.ac.uk/fg/annotare/help/assign_files.html">Assign files</a></li>
             </ul>
           </li>
-          <li><a href="">Validate and submit</a>
+          <li><a>Validate and submit</a>
             <ul>
-              <li><a href="validate_exp.html#validate">What is validation?</a></li>
-              <li><a href="submit_exp.html">Submit, and what happens next?</a></li>
-              <li><a href="submit_exp.html#save_sub">Saving a copy of your submission</a></li>
+              <li><a target="_parent" href="https://www.ebi.ac.uk/fg/annotare/help/validate_exp.html#validate">What is validation?</a></li>
+              <li><a target="_parent" href="https://www.ebi.ac.uk/fg/annotare/help/submit_exp.html">Submit, and what happens next?</a></li>
+              <li><a target="_parent" href="https://www.ebi.ac.uk/fg/annotare/help/submit_exp.html#save_sub">Saving a copy of your submission</a></li>
             </ul>
           </li>
         </ul>
       </li>
-      <li><a href="">After submission</a>
+      <li><a>After submission</a>
         <ul>
-          <li><a href="after_sub_private_access.html">Access private experiments</a></li>
-          <li><a href="after_sub_modify_data.html">Modify or remove an existing experiment</a></li>
-          <li><a href="after_sub_data_availability.html">Data availability and release policy</a></li>
+          <li><a target="_parent" href="https://www.ebi.ac.uk/fg/annotare/help/after_sub_private_access.html">Access private experiments</a></li>
+          <li><a target="_parent" href="https://www.ebi.ac.uk/fg/annotare/help/after_sub_modify_data.html">Modify or remove an existing experiment</a></li>
+          <li><a target="_parent" href="https://www.ebi.ac.uk/fg/annotare/help/after_sub_data_availability.html">Data availability and release policy</a></li>
         </ul>
       </li>
     </ul>

@@ -22,7 +22,7 @@ title: Annotare Help Page
   </ol>
   <br>
 
-  <p>Start your single-cell submission using the single cell sequencing template in <a href="https://www.ebi.ac.uk/fg/annotare/">Annotare</a>. Follow the guides below for information about data formats and what metadata to include. Note that larger experiments with more than 1000 raw data files in one experiment are started in Annotare but will be completed manually with the help of a curator.</p>
+  <p>Start your single-cell submission using the single cell sequencing template in <a target="_parent" href="https://www.ebi.ac.uk/fg/annotare/">Annotare</a>. Follow the guides below for information about data formats and what metadata to include. Note that larger experiments with more than 1000 raw data files in one experiment are started in Annotare but will be completed manually with the help of a curator.</p>
   <br>
   <h3 id="SampleInfo">Sample information</h3>
 
@@ -36,13 +36,13 @@ title: Annotare Help Page
         <p><strong>Inferred cell type</strong><br>
         If your experiment involves discovering new cell types or you work with pooled cells from a whole organ or organism, the precise cell type might be undefined at the start of the experiment but inferred later during the analysis. In that case, annotate the samples with the inferred cells type using the attribute <strong>"inferred cell type"</strong>. The attribute "cell type" should refer to the input cell type that is known at the start of the experiment. <br>
         If you have multiplexed data and cannot enter this in the samples table, please include the annotations in a separate processed data file (<a href="#ProcessedData">see below</a>).<br>
-        <a href="https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-5953/samples/" class="readmore" target="_blank">Example: E-MTAB-5953</a>
+        <a target="_blank" href="https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-5953/samples/" class="readmore" target="_blank">Example: E-MTAB-5953</a>
         </p>
       </li>
 
       <li>
         <p><strong>Single cell identifier (experimental variable)</strong><br>
-        If the purpose of your experiment is comparing the heterogeneity within one cell population, you might not have any other experimental variables. In this case, you can use the term <strong>"single cell identifier"</strong> as experimental variable and enter the cell IDs as values. <a href="https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-6142/samples/" class="readmore" target="_blank">Example: E-MTAB-6142</a>
+        If the purpose of your experiment is comparing the heterogeneity within one cell population, you might not have any other experimental variables. In this case, you can use the term <strong>"single cell identifier"</strong> as experimental variable and enter the cell IDs as values. <a target="_blank" href="https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-6142/samples/" class="readmore" target="_blank">Example: E-MTAB-6142</a>
         </p>
       </li>
 
@@ -55,13 +55,13 @@ title: Annotare Help Page
             <li>"dead cell"</li>
             <li>"no cell"</li>
           </ul>
-        <p><a href="https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-5522/samples/" class="readmore" target="_blank">Example: E-MTAB-5522</a></p>
+        <p><a target="_blank" href="https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-5522/samples/" class="readmore" target="_blank">Example: E-MTAB-5522</a></p>
       </li>
 
       <li>
         <p><strong>Post-analysis well quality</strong><br>
         You might have quality information about the dataset, e.g. which cells were excluded from your analysis due to insufficient sequencing quality. You can use the attribute <strong>"post analysis single cell quality"</strong> and annotate each cell with "pass" or "fail".
-        <a href="https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-5522/samples/" class="readmore" target="_blank">Example: E-MTAB-5522</a>
+        <a target="_blank" href="https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-5522/samples/" class="readmore" target="_blank">Example: E-MTAB-5522</a>
         </p>
       </li>
 
@@ -131,7 +131,7 @@ title: Annotare Help Page
   <h3 id="LibraryInfo">Single cell library information</h3>
 
   <h4>1. Pick library construction method </h4>
-  <p>Select the type of single cell <strong>library construction</strong> that you followed from <a href="https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0010183&viewMode=All&siblings=false">controlled vocabulary</a> drop-down menu. For some of the most commonly used methods, this will pre-fill the other fields with the default values. These can still be adjusted afterwards. </p>
+  <p>Select the type of single cell <strong>library construction</strong> that you followed from <a target="_blank" href="https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0010183&viewMode=All&siblings=false">controlled vocabulary</a> drop-down menu. For some of the most commonly used methods, this will pre-fill the other fields with the default values. These can still be adjusted afterwards. </p>
 
   <h4>2. Refine parameters</h4>
   <p>Check each parameter carefully, selecting the suitable option from the drop-down menu. For some commonly used library constructions methods Annotare will show the default parameters of the protocol, you may still need to adjust those.</p>
@@ -166,7 +166,7 @@ title: Annotare Help Page
       </li>
       <li>
         <p><strong>Custom spike-ins</strong><br>
-        If you have used a non-commercial spike-in set, describe this in the library construction protocol. Additionally, upload a table (tab-delimited text) with the names and concentrations of the spike-ins, and a <em>fasta</em> file containing the nucleotide sequences. <a href="https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-3624/E-MTAB-3624.additional.1.zip" class="readmore">Example: E-MTAB-3624.additional.1.zip</a>
+        If you have used a non-commercial spike-in set, describe this in the library construction protocol. Additionally, upload a table (tab-delimited text) with the names and concentrations of the spike-ins, and a <em>fasta</em> file containing the nucleotide sequences. <a target="_blank" href="https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-3624/E-MTAB-3624.additional.1.zip" class="readmore">Example: E-MTAB-3624.additional.1.zip</a>
         </p>
       </li>
       <li>
@@ -299,11 +299,11 @@ title: Annotare Help Page
   <h3 id="FileFormats">File types and formats</h3>
 
     <h4 id="RawData">Raw data</h4>
-    <p>In addition to the rules below, all raw data must conform to the general <a href="accepted_sequencing_file_formats.html">accepted sequencing file formats</a>.</p>
+    <p>In addition to the rules below, all raw data must conform to the general <a target="_parent" href="https://www.ebi.ac.uk/fg/annotare/help/accepted_sequencing_file_formats.html">accepted sequencing file formats</a>.</p>
 
-    <p>Raw read data should be submitted in <em>fastq.gz</em> format. Prepare one file per cell (or 2 if you have used paired-end sequencing), following the <a href="http://ena-docs.readthedocs.io/en/latest/format_01.html">general recommendations from the European Nucleotide Archive (ENA)</a>. An exception are droplet-based technologies like 10x and Drop-seq and other methods for which data is not demultiplexed, where we allow submission of multiplexed data. A few extra rules apply here.</p>
+    <p>Raw read data should be submitted in <em>fastq.gz</em> format. Prepare one file per cell (or 2 if you have used paired-end sequencing), following the <a target="_blank" href="http://ena-docs.readthedocs.io/en/latest/format_01.html">general recommendations from the European Nucleotide Archive (ENA)</a>. An exception are droplet-based technologies like 10x and Drop-seq and other methods for which data is not demultiplexed, where we allow submission of multiplexed data. A few extra rules apply here.</p>
 
-    <p>For <strong>10x technology</strong>, please provide <em>fastq.gz</em> files, for example as <a href="https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/mkfastq">generated by CellRanger software from bcl files</a>. These are usually 2-4 <em>fastq.gz</em> files per library, containing the cDNA read and several barcode reads in known positions.</p>
+    <p>For <strong>10x technology</strong>, please provide <em>fastq.gz</em> files, for example as <a target="_blank" href="https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/mkfastq">generated by CellRanger software from bcl files</a>. These are usually 2-4 <em>fastq.gz</em> files per library, containing the cDNA read and several barcode reads in known positions.</p>
       <p>We can currently validate files that follow the 10x file naming conventions:</p>
       <ul>
         <li>R1 + R2 (+ I1)</li>
@@ -453,7 +453,7 @@ title: Annotare Help Page
           <li><a target="_parent" href="https://www.ebi.ac.uk/fg/annotare/help/time_saving_features.html">Time-saving features</a></li>
           <li><a target="_parent" href="https://www.ebi.ac.uk/fg/annotare/help/describe_exp.html">Describe experiment</a></li>
           <li><a target="_parent" href="https://www.ebi.ac.uk/fg/annotare/help/sample_attributes.html">Sample attributes and protocols</a></li>
-          <li><a target="_parent" href="">Technology-specific details</a>
+          <li><a target="_parent">Technology-specific details</a>
             <ul class="menu vertical nested is-active">
               <li><a target="_parent" href="https://www.ebi.ac.uk/fg/annotare/help/seq_lib_spec.html">Sequencing library information</a></li>
               <li><a target="_parent" class="active" href="single-cell_submission_guide.html">Single cell information</a></li>
